@@ -1,7 +1,5 @@
 # LusoToolkit
 
-Utilitarios Windows com interface em portugues de Portugal, adaptados por Alex Prudencio a partir do WinUtil de Chris Titus Tech. A aplicacao mantem o nome **Windows Utilities PT-PT** na interface.
-
 ## Abrir com uma linha
 
 No PowerShell do Windows, cole:
