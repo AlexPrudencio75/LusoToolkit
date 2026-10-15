@@ -1,0 +1,103 @@
+Windows Utilities PT-PT — v0.3.7
+
+XD
+- XD integrado como cartão no catálogo, na secção Softwares de faturação.
+- Novo filtro para esta secção; a pesquisa também encontra o XD.
+- Clique no cartão para escolher onde guardar o instalador Windows.
+- Confirma que o endereço continua publicado na página oficial do fabricante.
+- Transferência com progresso, controlo de origem e remoção de ficheiros parciais.
+- Verificação da assinatura digital antes de abrir o ficheiro.
+- Abertura do assistente sem argumentos silenciosos. A instalação é manual.
+- Confirmação no fim e possibilidade de abrir a pasta de destino.
+- O XD não entra nas seleções de instalação automática nem na desinstalação.
+
+CORREÇÕES
+- Erros da interface chegam ao diagnóstico e produzem um resultado de falha.
+- O processo elevado é aguardado e o seu código de saída é preservado.
+- O arranque elevado utiliza Windows PowerShell 5.1.
+- Se o ponto de restauro selecionado falhar, as restantes otimizações param.
+- PdfCraft: seleção de arquitetura x86/x64/ARM64 e resultados de instalação.
+- PdfCraft: desinstalação MSI e indicação explícita quando não é encontrado.
+- Operações sem qualquer resultado deixam de ser apresentadas como sucesso.
+- Win11 Creator bloqueado na navegação e removido o atalho Alt+W.
+- Versão centralizada em VERSION e usada no título e no menu Sobre.
+- Traduções do catálogo, Configuração, AppX, categorias e principais mensagens.
+- As traduções dos seletores DNS/MPO preservam os identificadores técnicos.
+- Tema escuro inicial e localização do logótipo ancorada à pasta do projeto.
+- O logótipo e LICENSE mantêm os bytes da versão original.
+
+FICHEIROS CRIADOS
+VERSION
+config/localization.json
+functions/private/Get-WinUtilCategoryLabel.ps1
+functions/private/Install-WinUtilPdfCraft.ps1
+functions/private/Install-WinUtilXD.ps1
+functions/public/Invoke-WPFXDInstall.ps1
+ALTERACOES-v0.3.7.txt
+
+FICHEIROS ALTERADOS
+Compile.ps1
+INICIAR-DIAGNOSTICO.ps1
+LEIA-ME.txt
+config/applications.json
+config/tweaks.json
+functions/private/Add-SelectedAppsMenuItem.ps1
+functions/private/Complete-WinUtilPackageRun.ps1
+functions/private/Find-AppsByNameOrDescription.ps1
+functions/private/Get-WinUtilAppEntryHandlers.ps1
+functions/private/Initialize-InstallAppEntry.ps1
+functions/private/Initialize-InstallCategoryAppList.ps1
+functions/private/Invoke-WinUtilCloseRequest.ps1
+functions/private/New-WinUtilFossBadge.ps1
+functions/private/Reset-WPFCheckBoxes.ps1
+functions/private/Save-WinUtilFile.ps1
+functions/private/Start-WinUtilJob.ps1
+functions/private/Start-WinUtilUserInterface.ps1
+functions/public/Initialize-WPFUI.ps1
+functions/public/Invoke-WPFAppxInstall.ps1
+functions/public/Invoke-WPFAppxRemoval.ps1
+functions/public/Invoke-WPFButton.ps1
+functions/public/Invoke-WPFFeatureInstall.ps1
+functions/public/Invoke-WPFGetInstalled.ps1
+functions/public/Invoke-WPFInstall.ps1
+functions/public/Invoke-WPFSelectedCheckboxesUpdate.ps1
+functions/public/Invoke-WPFTab.ps1
+functions/public/Invoke-WPFtweaksbutton.ps1
+functions/public/Invoke-WPFUIElements.ps1
+functions/public/Invoke-WPFundoall.ps1
+functions/public/Invoke-WPFUnInstall.ps1
+scripts/main.ps1
+scripts/start.ps1
+xaml/inputXML.xaml
+winutil.ps1 (gerado novamente pelo compilador)
+
+VALIDAÇÃO
+- Compilação, análise sintática e testes de componentes em PowerShell 5.1.
+- Carregamento WPF e inspeção de imagens renderizadas de três separadores.
+- Pesquisa, filtros combinados, seleção e eventos do cartão XD.
+- Falhas de restauro, interface, checksum, assinatura e rede testadas com
+  operações de sistema e lançamentos de instaladores substituídos por registos.
+- Transferências reais contra um servidor HTTP local de teste: progresso,
+  conteúdo completo, deteção de conteúdo incompleto e restrição de origem.
+- Código de erro preservado pelo bootstrap e pelo diagnóstico em processos
+  PowerShell reais, usando um script de teste que termina com erro.
+- URL oficial XD consultada e início do executável verificado por pedido parcial.
+
+POR VALIDAR NUM COMPUTADOR DE TESTE
+- Arranque completo com aceitação ou cancelamento do UAC.
+- Transferência completa do instalador XD, com cerca de 1,1 GB, e execução real
+  do assistente. O teste automatizado não descarrega esse ficheiro integralmente.
+- Instalações, desinstalações, otimizações e reversões reais no Windows 10/11.
+- Os registos técnicos e as mensagens de ferramentas externas podem aparecer
+  no idioma original; os identificadores internos são preservados.
+
+COMO VALIDAR
+1. Extraia o ZIP completo para uma pasta nova.
+2. Execute INICIAR.cmd e aceite o pedido de administrador.
+3. Em Instalar, confirme a secção e o filtro Softwares de faturação.
+4. Clique XD, escolha a pasta e aguarde a transferência.
+5. Confirme que abre o assistente e conclua os passos manualmente.
+6. Em Sobre, confirme a versão 0.3.7.
+
+Não foi adicionada integração ZoneSoft nem foram reintroduzidas aplicações
+retiradas do catálogo Instalar. A v0.3.6 original permanece intacta.

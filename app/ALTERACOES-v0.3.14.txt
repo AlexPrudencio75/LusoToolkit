@@ -1,0 +1,14 @@
+Windows Utilities PT-PT — v0.3.14
+
+A ausência de assinatura digital do ZSTools oficial passa de aviso para
+informação no registo. Este caso não produz a mensagem "1 aviso" nem o
+estado amarelo quando a cópia e abertura terminam sem outros problemas.
+
+Mantidos todos os controlos: origem HTTPS oficial, ficheiros esperados,
+hashes, deteção da instalação, cópias de segurança, reversão e bloqueios
+de assinaturas inválidas ou de outro fabricante.
+O aviso informativo na janela de escolha continua visível.
+Os avisos e erros das restantes situações continuam a ser assinalados.
+Não houve alterações ao processamento de avisos global nem aos fluxos XD/ZoneSoft.
+
+Extraia o ZIP completo para uma pasta nova e execute INICIAR.cmd.

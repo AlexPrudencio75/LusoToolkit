@@ -1,0 +1,1 @@
+v0.3.5 - Adicionada secção Software de Faturação no separador Instalar, com botão XD — Transferir instalador. Abre página oficial de downloads XD. O utilizador escolhe Windows / Instalador Completo e efetua a instalação manualmente. ZoneSoft será integrada posteriormente.

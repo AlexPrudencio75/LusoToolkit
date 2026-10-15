@@ -1,0 +1,88 @@
+﻿Windows Utilities PT-PT
+Interface e adaptação: Alex Prudêncio.
+
+Extraia a pasta completa do ZIP e execute INICIAR.cmd.
+Aceite o pedido de administrador para abrir a aplicação.
+A versão encontra-se no ficheiro VERSION e no menu Sobre.
+
+XD:
+No separador Instalar, procure a secção Softwares de faturação.
+Marque o cartão XD e clique em Instalar / transferir seleção.
+O XD tem o mesmo estilo de seleção do ZoneSoft, sem a seta de transferência.
+Um clique no cartão apenas marca ou desmarca; não inicia logo o download.
+Pode selecionar XD em conjunto com uma ou mais edições ZoneSoft ou outras aplicações.
+Aguarde a transferência para a pasta Transferências do Windows.
+O instalador oficial tem cerca de 1,1 GB; o tamanho pode mudar.
+Quando terminar, o assistente do XD abre automaticamente para concluir a instalação manualmente.
+Não são usados parâmetros de instalação silenciosa no XD.
+Não é apresentada uma janela para escolher a pasta nem uma confirmação no fim.
+Se XDSoftware.exe já existir, o novo ficheiro recebe um número, sem substituir o anterior.
+Se o fabricante mudar o endereço publicado, a aplicação interrompe a transferência.
+Mantém-se a verificação da origem oficial e da assinatura; assinaturas inválidas impedem a abertura.
+
+ZoneSoft:
+Na mesma secção existem três cartões selecionáveis: ZoneSoft Posto,
+ZoneSoft Sem SQL e ZoneSoft Completo (o ZSSetup sem sufixo).
+Marque uma, duas ou as três opções e clique em Instalar / transferir seleção.
+A aplicação consulta a pasta PT > Ultimas Versões > ZS_POS_ZS_REST do portal
+oficial e escolhe a versão numérica mais recente de cada edição marcada.
+Não escolhe a edição Posto Offline nem ficheiros de outras pastas.
+As transferências são sequenciais e apenas das edições selecionadas.
+Os ZIPs ficam em Transferências/Downloads e são extraídos automaticamente
+para uma pasta nova, com o mesmo nome do ZIP (sem a extensão).
+Não é preciso indicar a pasta; ficheiros e extrações anteriores nunca são substituídos.
+Depois de extrair o pacote completo, abre apenas o Setup.exe da raiz como administrador.
+A assinatura digital tem de ser válida e identificar o fabricante ZoneSoft.
+O Windows poderá pedir confirmação de administrador (UAC); aceite para abrir.
+Não há parâmetros silenciosos: conclua os passos no assistente de instalação.
+Não abre o ZIP nem executa os outros instaladores incluídos no pacote por iniciativa própria.
+O ZIP e a pasta extraída são conservados para uso posterior, mesmo se cancelar o UAC.
+Os ZIPs têm atualmente cerca de 700 MB a 1,2 GB cada; reserve espaço suficiente.
+A origem HTTPS, o tamanho publicado e a estrutura ZIP são verificados.
+O portal não publica um checksum nesta listagem; não é feita verificação SHA-256.
+Em 15/10/2026, os pedidos de listagem e de download usados pela própria página
+oficial não exigiam autenticação. Por isso não são pedidas nem guardadas credenciais.
+Se o fabricante passar a exigir autenticação ou mudar o formato, a operação
+interrompe-se com uma mensagem; não tenta contornar o login.
+A desinstalação automática do ZoneSoft não está disponível.
+
+ZSTools:
+Selecione ZSTools na secção Softwares de faturação e clique em Instalar / transferir seleção.
+Depois de transferir o ZIP oficial de PT > Utilitários, surge uma escolha:
+- Só descarregar: conserva o ZIP em Downloads, sem extrair, copiar ou abrir.
+- Copiar para ZSRest e abrir: extrai, copia o conteúdo para a instalação existente
+  e abre o ZSTools.exe dessa instalação como administrador.
+Procura automaticamente <disco>:\Zone Soft\ZSRest nos discos locais disponíveis.
+Exige ZSRest.exe nessa pasta e não aceita pastas ou executáveis que sejam ligações.
+Com uma instalação, o destino fica pré-selecionado; com várias, tem de escolher uma.
+Se não encontrar uma instalação, só é possível descarregar. Não cria uma instalação nova.
+Feche o ZSRest, ZSPos e ZSTools dessa instalação antes de copiar; não termina processos.
+O pacote atual contém ZSTools.exe, EN_ZSTOOLS.lng, ES_ZSTOOLS.lng, libeay32.dll e ssleay32.dll.
+Só estes cinco ficheiros podem ser copiados. Não substitui ZSRest.exe, bases de dados
+ou configurações da aplicação. Se o formato do pacote mudar, interrompe a cópia.
+Os originais ficam em <raiz ZSRest>\WinUtil-ZSTools-Backups\<data e identificador>,
+com um manifesto e hashes. Em caso de falha a meio, tenta repor os originais.
+Uma falha de reposição é assinalada e a cópia de segurança é conservada.
+O ZSTools oficial atual não tem assinatura digital. A janela de escolha avisa
+dessa possibilidade; a transferência exige HTTPS e domínio oficial, e o ficheiro
+copiado tem de corresponder ao extraído por SHA-256 antes de abrir.
+Esta ausência de assinatura fica como informação no registo e não deixa a tarefa
+amarela se tudo correr bem. Os avisos e erros reais continuam a ser apresentados.
+Uma assinatura inválida ou de outro fabricante bloqueia a cópia.
+O Windows poderá pedir confirmação de administrador (UAC).
+Cancelar a abertura/UAC conserva os ficheiros já copiados e a cópia de segurança.
+Cancelar a janela inicial conserva só o ZIP; sem janela visível nunca copia automaticamente.
+O ZIP e a extração em Downloads são conservados. Não é feita remoção automática.
+
+As restantes aplicações mantêm os gestores WinGet e Chocolatey, com instalação
+automática quando suportada. O PdfCraft usa o instalador oficial com SHA-256.
+O tema escuro é aplicado no arranque e pode ser alterado pelo menu de tema.
+
+Se o arranque falhar, consulte ERRO-ARRANQUE.txt na pasta da aplicação.
+Os registos detalhados ficam em %LOCALAPPDATA%\winutil\logs.
+Quando a criação de um ponto de restauro selecionado falha, as outras otimizações
+não são aplicadas. Desfazer aplica os valores de reversão do catálogo; não é uma
+cópia exata de todas as definições anteriores do computador.
+
+A aplicação contém componentes derivados de software sob licença MIT. Consulte LICENSE para a atribuição legal obrigatória.
+Os identificadores internos WinUtil foram mantidos para preservar compatibilidade e funcionamento.

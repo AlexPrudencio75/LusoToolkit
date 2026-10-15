@@ -1,0 +1,12 @@
+# Ficheiros locais de execucao/testes; nao publicar registos, relatorios ou credenciais.
+ERRO-ARRANQUE.txt
+*.log
+*.partial
+.env
+.env.*
+work/
+__pycache__/
+.venv/
+.vscode/
+.idea/
+app/winutil.ps1

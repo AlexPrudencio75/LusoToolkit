@@ -1,0 +1,83 @@
+{
+    "WPFInstall": {
+        "Content": "Instalar / transferir seleção",
+        "Category": "____Ações",
+        "Type": "Button",
+        "Order": "1",
+        "Description": "Instala ou atualiza as aplicações selecionadas. Para o ZoneSoft, transfere, extrai e abre o Setup como administrador. No ZSTools pode só descarregar ou copiar para a raiz ZSRest e abrir."
+    },
+    "WPFUninstall": {
+        "Content": "Desinstalar aplicações",
+        "Category": "____Ações",
+        "Type": "Button",
+        "Order": "2",
+        "Description": "Desinstala as aplicações selecionadas."
+    },
+    "WPFInstallUpgrade": {
+        "Content": "Atualizar todas as aplicações",
+        "Category": "____Ações",
+        "Type": "Button",
+        "Order": "3",
+        "Description": "Procura atualizações para todas as aplicações através do gestor escolhido."
+    },
+    "WingetRadioButton": {
+        "Content": "WinGet",
+        "Category": "__Gestor de pacotes",
+        "Type": "RadioButton",
+        "GroupName": "PackageManagerGroup",
+        "Checked": true,
+        "Order": "1",
+        "Description": "Utilizar o gestor de pacotes WinGet."
+    },
+    "ChocoRadioButton": {
+        "Content": "Chocolatey",
+        "Category": "__Gestor de pacotes",
+        "Type": "RadioButton",
+        "GroupName": "PackageManagerGroup",
+        "Checked": false,
+        "Order": "2",
+        "Description": "Utilizar o gestor de pacotes Chocolatey."
+    },
+    "WPFCollapseAllCategories": {
+        "Content": "Recolher categorias",
+        "Category": "__Seleção",
+        "Type": "Button",
+        "Order": "1",
+        "Description": "Fecha todas as categorias de aplicações."
+    },
+    "WPFExpandAllCategories": {
+        "Content": "Expandir categorias",
+        "Category": "__Seleção",
+        "Type": "Button",
+        "Order": "2",
+        "Description": "Abre todas as categorias de aplicações."
+    },
+    "WPFClearInstallSelection": {
+        "Content": "Limpar seleção",
+        "Category": "__Seleção",
+        "Type": "Button",
+        "Order": "3",
+        "Description": "Desmarca todas as aplicações selecionadas."
+    },
+    "WPFGetInstalled": {
+        "Content": "Mostrar instaladas",
+        "Category": "__Seleção",
+        "Type": "Button",
+        "Order": "4",
+        "Description": "Assinala as aplicações que já estão instaladas."
+    },
+    "WPFselectedAppsButton": {
+        "Content": "Aplicações selecionadas: 0",
+        "Category": "__Seleção",
+        "Type": "Button",
+        "Order": "5",
+        "Description": "Mostra as aplicações selecionadas."
+    },
+    "WPFInstallFOSSInfo": {
+        "Content": "Software livre e de código aberto",
+        "Category": "__Seleção",
+        "Type": "Note",
+        "Order": "0",
+        "Description": "Informação sobre as aplicações identificadas como software livre."
+    }
+}

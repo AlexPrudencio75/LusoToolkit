@@ -1,0 +1,31 @@
+Windows Utilities PT-PT — v0.3.13
+
+ZSTools acrescentado como cartão selecionável em Softwares de faturação.
+O ZIP mais recente é procurado em PT > Utilitários, na listagem oficial.
+Após transferir, a aplicação pergunta se pretende só descarregar ou copiar
+para a raiz da instalação ZSRest e abrir o ZSTools.exe.
+
+Deteção automática de <disco>:\Zone Soft\ZSRest com ZSRest.exe existente.
+Não utiliza seleção livre de pastas. Uma instalação fica pré-selecionada;
+se existirem várias, a cópia só é habilitada depois de escolher uma.
+Com zero instalações, apenas o download fica disponível.
+
+A cópia extrai o pacote completo, valida os cinco ficheiros esperados,
+guarda os originais e um manifesto em WinUtil-ZSTools-Backups dentro da raiz,
+prepara os novos ficheiros e substitui-os individualmente de forma atómica.
+Verifica os hashes e tenta reverter as substituições em caso de falha.
+Não modifica ZSRest.exe, bases de dados ou ficheiros fora do pacote.
+Não termina processos: exige que ZSRest, ZSPos e ZSTools estejam fechados.
+
+O utilitário ZSTools publicado atualmente não tem assinatura digital;
+a janela avisa antes da escolha de cópia/execução. Aceita esse estado apenas
+para este pacote oficial. Assinaturas inválidas ou de outro fabricante bloqueiam.
+A assinatura obrigatória dos instaladores Setup.exe ZoneSoft não foi flexibilizada.
+
+O ZSTools copiado é verificado por SHA-256 e aberto como administrador,
+com o diretório de trabalho na raiz ZSRest, sem argumentos e sem operações internas.
+Download isolado e cancelamento inicial nunca extraem, copiam ou executam ficheiros.
+Sem interface visível, o comportamento é sempre só download.
+
+Mantidos os fluxos XD e ZoneSoft das versões anteriores.
+Extraia o ZIP completo para uma pasta nova e execute INICIAR.cmd.

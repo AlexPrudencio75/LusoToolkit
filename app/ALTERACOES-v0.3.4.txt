@@ -1,0 +1,1 @@
+v0.3.4: Removida a entrada informativa Internet Explorer 8 do catalogo Instalar. Chrome e Firefox mantidos.

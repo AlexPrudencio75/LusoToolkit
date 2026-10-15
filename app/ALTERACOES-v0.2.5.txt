@@ -1,0 +1,1 @@
+v0.2.5: Os botoes (?) mostram ajuda dentro da aplicacao e deixam de abrir paginas externas. A descricao apresentada provem das configuracoes locais e pode ainda conter ingles. Os comandos de otimizacao nao foram alterados.

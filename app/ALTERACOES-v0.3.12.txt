@@ -1,0 +1,17 @@
+Windows Utilities PT-PT — v0.3.12
+
+O cartão XD passa a ser selecionável, tal como os cartões ZoneSoft.
+Retirada a seta de transferência e utilizado o mesmo estilo dos outros cartões.
+Clicar no XD apenas marca/desmarca e atualiza o contador de aplicações selecionadas.
+Para transferir, marque XD e clique em Instalar / transferir seleção.
+
+O XD pode ser selecionado com ZoneSoft ou outras aplicações na mesma tarefa.
+A transferência mantém a origem oficial, o destino automático em Downloads,
+a preservação de ficheiros anteriores e a abertura automática do assistente.
+A instalação continua manual, sem parâmetros silenciosos.
+As falhas XD são registadas sem impedir as restantes transferências ZoneSoft.
+
+Mantido o comportamento ZoneSoft da versão 0.3.11: procura a versão mais recente,
+transfere, extrai o pacote completo e abre o Setup.exe assinado como administrador.
+Não há alterações aos instaladores, endereços, assinatura ou extração do ZoneSoft.
+Extraia o ZIP completo para uma pasta nova e execute INICIAR.cmd.

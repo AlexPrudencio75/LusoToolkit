@@ -1,0 +1,1 @@
+v0.3.6: Corrigida a secção Software de Faturação. Agora aparece explicitamente no topo do separador Instalar, com botão XD que abre as transferências oficiais. Não depende do catálogo de aplicações. ZoneSoft reservada para futura versão.

@@ -1,0 +1,9 @@
+Windows Utilities PT-PT v0.3.0
+
+- Reativado separador Instalar, mantendo os restantes.
+- Traduzidos filtros de categorias e principais ações de instalação.
+- Mantidas operações originais WinGet/Chocolatey, pesquisa e seleção.
+- O INICIAR.cmd compila o código e inicia a aplicação.
+- Requer Internet para instalar aplicações.
+- As descrições individuais do catálogo de aplicações ainda podem estar em inglês.
+- Testar num Windows real antes de instalar ou desinstalar programas.

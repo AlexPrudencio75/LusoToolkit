@@ -1,0 +1,1 @@
+﻿v0.2.8: Arranque com diagnostico e pausa em caso de erro. Guarda detalhes em ERRO-ARRANQUE.txt. Nao modifica funcionalidades ou interface.

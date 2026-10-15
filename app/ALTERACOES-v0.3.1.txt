@@ -1,0 +1,7 @@
+v0.3.1 - Correcao do catalogo Instalar
+
+Causa: a traducao dos Headers XAML alterou os nomes internos dos separadores; o motor esperava Install, Tweaks e Config. Como resultado, Initialize-WinUtilTabContent nao executava o ramo Install e o ItemsControl ficava nulo.
+
+Correcao: Invoke-WPFTab agora usa identificadores internos estaveis, separados dos titulos pt-PT visiveis. Mantem os titulos traduzidos.
+
+Validacao: verificacao estatica de mapeamento, sintaxe e estrutura ZIP. Nao testado em Windows real.

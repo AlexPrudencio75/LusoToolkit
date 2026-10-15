@@ -1,0 +1,1 @@
+v0.2.6: Removida a opção Documentação do menu Definições e respetivo evento PowerShell. Restante interface e funcionalidades preservadas.

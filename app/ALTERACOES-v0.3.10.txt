@@ -1,0 +1,29 @@
+Windows Utilities PT-PT — v0.3.10
+
+ZoneSoft acrescentado à secção Softwares de faturação, ao lado do XD:
+- ZoneSoft Posto (não Posto Offline)
+- ZoneSoft Sem SQL
+- ZoneSoft Completo (ZSSetup sem sufixo)
+
+Selecione uma ou várias edições e clique em Instalar / transferir seleção.
+Só as edições selecionadas são transferidas, uma de cada vez, para a pasta
+Transferências/Downloads do Windows. Cada ZIP abre automaticamente no fim;
+a extração e a instalação são manuais. Não são executados instaladores do ZIP.
+Pode combinar esta seleção com aplicações normais; essas mantêm os seus gestores.
+
+As versões não ficam fixas em 2024.0.1.37: a listagem oficial é consultada em
+cada tarefa e é escolhida a versão numérica mais recente de cada edição.
+Origem: PT > Ultimas Versões > ZS_POS_ZS_REST, no portal ZSLIC.
+
+Confirmado em 15/10/2026 que os mesmos pedidos usados pela página oficial
+servem esta listagem e estes três ZIPs sem autenticação. A integração não
+recolhe, guarda, incorpora ou tenta adivinhar credenciais nem reutiliza cookies.
+Se passar a ser necessário login, a aplicação interrompe-se e informa o utilizador.
+
+Ficheiros existentes são preservados com nomes numerados. A transferência usa
+um ficheiro parcial, verifica HTTPS e o domínio oficial, o tamanho publicado e
+a estrutura ZIP antes de guardar e abrir. Não há checksum publicado na listagem.
+O menu de desinstalação fica desativado para estas entradas.
+
+Mantidas as correções e o funcionamento do XD da versão 0.3.9.
+Extraia o ZIP completo para uma pasta nova e execute INICIAR.cmd.

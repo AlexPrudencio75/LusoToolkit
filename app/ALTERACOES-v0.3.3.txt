@@ -1,0 +1,14 @@
+﻿Windows Utilities PT-PT v0.3.3 - Catálogo personalizado
+
+Navegadores: Chrome, Firefox; Internet Explorer 8 aparece desativado (incompatível com Windows 10/11).
+Documentos: Sumatra PDF e PdfCraft (ArtCraft).
+Ferramentas Microsoft: .NET Desktop Runtime 3.1, 5, 6, 7, 8, 9 e 10.
+Ferramentas profissionais: CPU-Z, Advanced IP Scanner.
+Utilitários: 7-Zip, WinRAR, AnyDesk, CrystalDiskInfo, Rufus, WizTree, TreeSize Free.
+
+NOTAS IMPORTANTES:
+- PdfCraft: instalador oficial v0.6.0 Windows x64 descarregado do GitHub, validado por SHA-256 e executado via MSI. Requer ligação à Internet. A função de desinstalar/atualizar do catálogo NÃO suporta este instalador personalizado.
+- Internet Explorer 8: não é possível instalar nativamente em Windows 10/11; fica apenas como informação desativada.
+- .NET Desktop Runtime 3.1, 5, 6, 7 e 9 podem estar fora de suporte. São opcionais; não instalar indiscriminadamente.
+- .NET Framework 1.x-4.x é uma família diferente e não está incluída.
+- O código ainda não foi testado em Windows real.

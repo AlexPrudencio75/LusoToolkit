@@ -1,0 +1,3 @@
+﻿Correcao da codificacao de caracteres no compilador PowerShell 5.1.
+Leitura explicita em UTF-8, ficheiros de codigo com BOM e verificacao contra caracteres corrompidos.
+Sem alteracoes aos comandos de otimizacao.

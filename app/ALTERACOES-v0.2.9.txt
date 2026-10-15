@@ -1,0 +1,1 @@
+v0.2.9 - Correcao da concatenacao de blocos PowerShell na compilacao: separadores de linha explicitos entre funcoes, configuracoes, XAML e script principal. Mantida a codificacao UTF-8.

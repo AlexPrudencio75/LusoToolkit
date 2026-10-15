@@ -1,0 +1,1 @@
+﻿v0.2.3: Logótipo WPF carregado diretamente do PNG local; largura dos separadores ajustada; tradução de opções adicionais e descrições de segurança (Teredo, IPv6, OneDrive, IA, desempenho máximo). Mantida a lógica original das operações. Não testado em Windows real.

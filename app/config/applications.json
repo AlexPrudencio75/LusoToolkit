@@ -1,0 +1,241 @@
+{
+    "7zip": {
+        "category": "Utilities",
+        "choco": "7zip",
+        "content": "7-Zip",
+        "description": "7-Zip is a free and open-source file archiver utility. It supports several compression formats and provides a high compression ratio, making it a popular choice for file compression.",
+        "link": "https://www.7-zip.org/",
+        "winget": "7zip.7zip",
+        "foss": true
+    },
+    "advancedip": {
+        "category": "Pro Tools",
+        "choco": "advanced-ip-scanner",
+        "content": "Advanced IP Scanner",
+        "description": "Advanced IP Scanner is a fast and easy-to-use network scanner. It is designed to analyze LAN networks and provides information about connected devices.",
+        "link": "https://www.advanced-ip-scanner.com/",
+        "winget": "Famatech.AdvancedIPScanner",
+        "foss": false
+    },
+    "anydesk": {
+        "category": "Utilities",
+        "choco": "anydesk",
+        "content": "AnyDesk",
+        "description": "AnyDesk is a remote desktop software that enables users to access and control computers remotely. It is known for its fast connection and low latency.",
+        "link": "https://anydesk.com/",
+        "winget": "AnyDesk.AnyDesk",
+        "foss": false
+    },
+    "chrome": {
+        "category": "Browsers",
+        "choco": "googlechrome",
+        "content": "Chrome",
+        "description": "Google Chrome is a widely used web browser known for its speed, simplicity, and seamless integration with Google services.",
+        "link": "https://www.google.com/chrome/",
+        "winget": "Google.Chrome",
+        "foss": false
+    },
+    "cpuz": {
+        "category": "Pro Tools",
+        "choco": "cpu-z",
+        "content": "CPU-Z",
+        "description": "CPU-Z is a system monitoring and diagnostic tool for Windows. It provides detailed information about the computer's hardware components, including the CPU, memory, and motherboard.",
+        "link": "https://www.cpuid.com/softwares/cpu-z.html",
+        "winget": "CPUID.CPU-Z",
+        "foss": false
+    },
+    "crystaldiskinfo": {
+        "category": "Utilities",
+        "choco": "crystaldiskinfo",
+        "content": "Crystal Disk Info",
+        "description": "Crystal Disk Info is a disk health monitoring tool that provides information about the status and performance of hard drives. It helps users anticipate potential issues and monitor drive health.",
+        "link": "https://crystalmark.info/en/software/crystaldiskinfo/",
+        "winget": "CrystalDewWorld.CrystalDiskInfo",
+        "foss": true
+    },
+    "dotnet10": {
+        "category": "Microsoft Tools",
+        "choco": "na",
+        "content": ".NET Desktop Runtime 10",
+        "description": "Ambiente de execução para aplicações Windows .NET Desktop. As versões antigas podem estar fora de suporte; instalar apenas quando necessário.",
+        "link": "https://dotnet.microsoft.com/download/dotnet",
+        "winget": "Microsoft.DotNet.DesktopRuntime.10",
+        "foss": true
+    },
+    "dotnet31": {
+        "category": "Microsoft Tools",
+        "choco": "na",
+        "content": ".NET Desktop Runtime 3.1",
+        "description": "Ambiente de execução para aplicações Windows .NET Desktop. As versões antigas podem estar fora de suporte; instalar apenas quando necessário.",
+        "link": "https://dotnet.microsoft.com/download/dotnet",
+        "winget": "Microsoft.DotNet.DesktopRuntime.3_1",
+        "foss": true
+    },
+    "dotnet5": {
+        "category": "Microsoft Tools",
+        "choco": "na",
+        "content": ".NET Desktop Runtime 5",
+        "description": "Ambiente de execução para aplicações Windows .NET Desktop. As versões antigas podem estar fora de suporte; instalar apenas quando necessário.",
+        "link": "https://dotnet.microsoft.com/download/dotnet",
+        "winget": "Microsoft.DotNet.DesktopRuntime.5",
+        "foss": true
+    },
+    "dotnet6": {
+        "category": "Microsoft Tools",
+        "choco": "na",
+        "content": ".NET Desktop Runtime 6",
+        "description": "Ambiente de execução para aplicações Windows .NET Desktop. As versões antigas podem estar fora de suporte; instalar apenas quando necessário.",
+        "link": "https://dotnet.microsoft.com/download/dotnet",
+        "winget": "Microsoft.DotNet.DesktopRuntime.6",
+        "foss": true
+    },
+    "dotnet7": {
+        "category": "Microsoft Tools",
+        "choco": "na",
+        "content": ".NET Desktop Runtime 7",
+        "description": "Ambiente de execução para aplicações Windows .NET Desktop. As versões antigas podem estar fora de suporte; instalar apenas quando necessário.",
+        "link": "https://dotnet.microsoft.com/download/dotnet",
+        "winget": "Microsoft.DotNet.DesktopRuntime.7",
+        "foss": true
+    },
+    "dotnet8": {
+        "category": "Microsoft Tools",
+        "choco": "na",
+        "content": ".NET Desktop Runtime 8",
+        "description": "Ambiente de execução para aplicações Windows .NET Desktop. As versões antigas podem estar fora de suporte; instalar apenas quando necessário.",
+        "link": "https://dotnet.microsoft.com/download/dotnet",
+        "winget": "Microsoft.DotNet.DesktopRuntime.8",
+        "foss": true
+    },
+    "dotnet9": {
+        "category": "Microsoft Tools",
+        "choco": "na",
+        "content": ".NET Desktop Runtime 9",
+        "description": "Ambiente de execução para aplicações Windows .NET Desktop. As versões antigas podem estar fora de suporte; instalar apenas quando necessário.",
+        "link": "https://dotnet.microsoft.com/download/dotnet",
+        "winget": "Microsoft.DotNet.DesktopRuntime.9",
+        "foss": true
+    },
+    "firefox": {
+        "category": "Browsers",
+        "choco": "firefox",
+        "content": "Firefox",
+        "description": "Mozilla Firefox is an open-source web browser known for its customization options, privacy features, and extensions.",
+        "link": "https://www.mozilla.org/en-US/firefox/new/",
+        "winget": "Mozilla.Firefox",
+        "foss": true
+    },
+    "pdfcraft": {
+        "category": "Document",
+        "choco": "na",
+        "content": "PdfCraft (ArtCraft)",
+        "description": "Editor PDF da ArtCraft. Instalação autónoma a partir da versão oficial 0.6.0, com verificação SHA-256 do ficheiro publicado.",
+        "link": "https://getartcraft.com/apps/pdfcraft",
+        "winget": "na",
+        "custom": "PdfCraft",
+        "foss": true
+    },
+    "rufus": {
+        "category": "Utilities",
+        "choco": "rufus",
+        "content": "Rufus Imager",
+        "description": "Rufus is a utility that helps format and create bootable USB drives, such as USB keys or pen drives.",
+        "link": "https://rufus.ie/",
+        "winget": "Rufus.Rufus",
+        "foss": true
+    },
+    "sumatra": {
+        "category": "Document",
+        "choco": "sumatrapdf",
+        "content": "Sumatra PDF",
+        "description": "Sumatra PDF is a lightweight and fast PDF viewer with minimalistic design.",
+        "link": "https://www.sumatrapdfreader.org/free-pdf-reader.html",
+        "winget": "SumatraPDF.SumatraPDF",
+        "foss": true
+    },
+    "treesize": {
+        "category": "Utilities",
+        "choco": "treesizefree",
+        "content": "TreeSize Free",
+        "description": "TreeSize Free is a disk space manager that helps you analyze and visualize the space usage on your drives.",
+        "link": "https://www.jam-software.com/treesize_free/",
+        "winget": "JAMSoftware.TreeSize.Free",
+        "foss": false
+    },
+    "winrar": {
+        "category": "Utilities",
+        "choco": "winrar",
+        "content": "WinRAR",
+        "description": "WinRAR is a powerful archive manager that allows you to create, manage, and extract compressed files.",
+        "link": "https://www.win-rar.com/",
+        "winget": "RARLab.WinRAR",
+        "foss": false
+    },
+    "xd": {
+        "category": "Billing Software",
+        "choco": "na",
+        "winget": "na",
+        "content": "XD",
+        "description": "Selecione o XD e clique em Instalar / transferir seleção. Transfere o instalador oficial para Transferências e abre automaticamente o assistente para concluir a instalação manualmente.",
+        "link": "https://www.site.xd.pt/demostrativos/downloads",
+        "custom": "XD",
+        "uninstallSupported": false,
+        "foss": false
+    },
+    "zonesoft_posto": {
+        "category": "Billing Software",
+        "choco": "na",
+        "winget": "na",
+        "content": "ZoneSoft Posto",
+        "description": "Transfere e extrai o pacote Posto mais recente, depois abre o Setup.exe como administrador. Não é a edição Posto Offline. Selecione uma ou mais edições e clique em Instalar / transferir seleção. Conclua a instalação no assistente.",
+        "link": "https://zslicweb.zonesoft.org/manuals_setups",
+        "custom": "ZoneSoft",
+        "variant": "Posto",
+        "uninstallSupported": false,
+        "foss": false
+    },
+    "zonesoft_semsql": {
+        "category": "Billing Software",
+        "choco": "na",
+        "winget": "na",
+        "content": "ZoneSoft Sem SQL",
+        "description": "Transfere e extrai o pacote Sem SQL mais recente, depois abre o Setup.exe como administrador. Selecione uma ou mais edições e clique em Instalar / transferir seleção. Conclua a instalação no assistente.",
+        "link": "https://zslicweb.zonesoft.org/manuals_setups",
+        "custom": "ZoneSoft",
+        "variant": "SemSQL",
+        "uninstallSupported": false,
+        "foss": false
+    },
+    "zonesoft_completo": {
+        "category": "Billing Software",
+        "choco": "na",
+        "winget": "na",
+        "content": "ZoneSoft Completo",
+        "description": "Transfere e extrai o ZSSetup mais recente sem sufixo (edição Completo), depois abre o Setup.exe como administrador. Selecione uma ou mais edições e clique em Instalar / transferir seleção. Conclua a instalação no assistente.",
+        "link": "https://zslicweb.zonesoft.org/manuals_setups",
+        "custom": "ZoneSoft",
+        "variant": "Completo",
+        "uninstallSupported": false,
+        "foss": false
+    },
+    "zstools": {
+        "category": "Billing Software",
+        "choco": "na",
+        "winget": "na",
+        "content": "ZSTools",
+        "description": "Transfere o ZSTools oficial e pergunta se pretende só guardar o ZIP ou extrair, copiar os ficheiros para a instalação existente em <disco>:\\Zone Soft\\ZSRest e abrir a ferramenta. Procura a pasta automaticamente e guarda cópias de segurança antes de substituir ficheiros.",
+        "link": "https://zslicweb.zonesoft.org/manuals_setups",
+        "custom": "ZSTools",
+        "uninstallSupported": false,
+        "foss": false
+    },
+    "wiztree": {
+        "category": "Utilities",
+        "choco": "wiztree",
+        "content": "WizTree",
+        "description": "WizTree is a fast disk space analyzer that helps you quickly find the files and folders consuming the most space on your hard drive.",
+        "link": "https://wiztreefree.com/",
+        "winget": "AntibodySoftware.WizTree",
+        "foss": false
+    }
+}

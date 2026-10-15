@@ -1,0 +1,4 @@
+Windows Utilities PT-PT v0.3.2
+
+Separador Instalar: removidas as categorias Comunicações, Desenvolvimento, Jogos, Multimédia e Ferramentas autoalojadas, incluindo as aplicações dessas categorias no catálogo e em Todos.
+Restantes categorias e funcionalidades mantidas.

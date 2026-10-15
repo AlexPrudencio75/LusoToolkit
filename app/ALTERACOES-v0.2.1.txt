@@ -1,0 +1,6 @@
+﻿Correção visual na parte inferior de Otimizações:
+- Separação vertical entre painéis e nota
+- Nota em português com quebra automática de linha
+- Altura automática para os painéis dentro do scroll
+- Barra de botões mantém-se fixa
+Nenhum comando de otimização foi alterado.

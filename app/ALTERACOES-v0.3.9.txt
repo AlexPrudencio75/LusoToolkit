@@ -1,0 +1,19 @@
+Windows Utilities PT-PT — v0.3.9
+
+Corrigido o cartão XD que apresentava a moldura cortada à direita.
+O botão do cartão passa a usar um estilo próprio, com dimensões automáticas,
+sem herdar a largura e a altura dos botões gerais da interface.
+O cartão mantém a mesma largura e altura das restantes aplicações.
+
+Mantido o comportamento da v0.3.8: transferência para Transferências/Downloads
+e abertura automática do assistente para instalação manual.
+
+Ficheiros alterados: xaml/inputXML.xaml,
+functions/private/Initialize-InstallAppEntry.ps1 e VERSION.
+winutil.ps1 recompilado; este ficheiro de alterações foi acrescentado.
+
+Validação: problema reproduzido antes da correção; cartões renderizados nos
+temas claro e escuro, a 100%, 125%, 150% e 200%; clique do botão verificado
+sem executar o instalador. Compilação e sintaxe verificadas em PowerShell 5.1.
+
+Extraia o ZIP completo para uma pasta nova e execute INICIAR.cmd.

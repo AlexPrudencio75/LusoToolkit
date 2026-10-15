@@ -1,0 +1,23 @@
+Windows Utilities PT-PT — v0.3.11
+
+ZoneSoft: depois de transferir cada edição selecionada, a aplicação extrai
+o pacote completo e abre o Setup.exe da raiz como administrador.
+O utilizador conclui os passos no assistente; não há instalação silenciosa.
+O Windows poderá pedir confirmação de administrador (UAC).
+
+O pacote fica numa pasta nova ao lado do ZIP em Transferências/Downloads.
+Nomes existentes são preservados com numeração. Não reutiliza pastas antigas.
+Mantém a estrutura do fabricante, incluindo engines, providers e SQLx64.zip.
+Não executa Autorun.inf, runtimes, WebView2 ou outros executáveis por iniciativa própria.
+Não extrai recursivamente outros ZIPs que façam parte do pacote.
+
+A extração valida os caminhos antes de escrever: rejeita caminhos absolutos,
+travessias de diretórios, nomes Windows inválidos, duplicados e ligações simbólicas.
+Verifica espaço livre em unidades locais e comunica o progresso de extração.
+Um Setup.exe ausente, ambíguo, não assinado, com assinatura inválida ou com
+um signatário diferente do fabricante ZoneSoft bloqueia a abertura elevada.
+Os ZIPs completos e as pastas finalizadas são preservados em caso de erro.
+
+Mantidas a escolha das três edições e a pesquisa da versão numérica mais recente.
+Mantido o funcionamento do XD. Não são utilizadas ou guardadas credenciais.
+Extraia o ZIP completo para uma pasta nova e execute INICIAR.cmd.

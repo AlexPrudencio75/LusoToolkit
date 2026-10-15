@@ -1,0 +1,6 @@
+v0.2.2 — Logótipo escolhido integrado no cabeçalho.
+- Substituído assets/logo.png pelo emblema azul/prateado com engrenagem, sem texto.
+- Ícone de navegação ampliado de 25 para 45 px.
+- Ajustado o espaçamento do cabeçalho.
+- Mantidas as funcionalidades e o layout da versão 0.2.1.
+- Não testado em Windows real.

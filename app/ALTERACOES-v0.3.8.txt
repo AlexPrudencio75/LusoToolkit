@@ -1,0 +1,28 @@
+Windows Utilities PT-PT — v0.3.8
+
+XD
+- Um clique no cartão inicia a transferência para a pasta Transferências do Windows.
+- Respeita a pasta Transferências quando esta foi movida ou redirecionada no Windows.
+- Removidas as janelas de escolha do destino e de confirmação no fim.
+- O assistente abre automaticamente, através do Windows, com uma janela normal.
+- A instalação continua manual, sem argumentos silenciosos.
+- Ficheiros existentes são preservados; o novo nome recebe um número quando necessário.
+- Mantidas as verificações da origem, do conteúdo transferido e da assinatura.
+- Mantidas as restantes correções da v0.3.7 e o logótipo original.
+
+FICHEIROS
+Novo: functions/private/Get-WinUtilXDDownloadPath.ps1
+Alterados: functions/public/Invoke-WPFXDInstall.ps1,
+functions/private/Install-WinUtilXD.ps1, config/applications.json,
+LEIA-ME.txt e VERSION. winutil.ps1 recompilado.
+
+VALIDAÇÃO
+- PowerShell 5.1: compilação, sintaxe e testes controlados do catálogo e dos fluxos.
+- Destino automático, pasta redirecionada, nomes repetidos e preservação do ficheiro anterior.
+- Abertura automática pelo Windows sem perguntas nem argumentos de instalação silenciosa.
+- O instalador XD que já tinha sido transferido foi verificado: assinatura válida de XDPEOPLE, LDA.
+- Não foi executado o instalador real nem repetida a transferência integral.
+
+UTILIZAÇÃO
+Extraia o ZIP completo para uma pasta nova e execute INICIAR.cmd.
+No separador Instalar, clique XD na secção Softwares de faturação e aguarde.

@@ -1,0 +1,1 @@
+﻿Removida a identidade promocional original da interface: diálogo Sobre, patrocinadores e documentação remota. Título alterado para Windows Utilities PT-PT. Exportação já não gera comando que executa site externo. Licença MIT preservada.
