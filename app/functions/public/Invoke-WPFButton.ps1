@@ -153,6 +153,7 @@ function Invoke-WPFButtonAction {
     Switch -Wildcard ($Button) {
         "WPFTab?BT" {Invoke-WPFTab $Button}
         "WPFInstall" {Invoke-WPFInstall}
+        "WPFPortableOpen" {Invoke-WPFPortableOpen}
         "WPFUninstall" {Invoke-WPFUnInstall}
         "WPFInstallUpgrade" {Invoke-WPFInstallUpgrade}
         "WPFXDDownloads" { Invoke-WPFXDInstall }

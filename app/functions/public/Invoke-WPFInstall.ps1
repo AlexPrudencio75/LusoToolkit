@@ -19,11 +19,16 @@
     $packageSummary = Get-WinUtilPackageLogSummary -Packages $PackagesToInstall -Preference $ManagerPreference
     Write-WinUtilLog -Component "Install" -Message "Install selected package(s): $($packageSummary -join '; ')"
 
+    $portableCount = @($PackagesToInstall | Where-Object custom -eq 'Portable').Count
     $manualCount = @($PackagesToInstall | Where-Object { $_.custom -in @('XD','ZoneSoft','ZSTools') }).Count
     $jobDescription = if ($manualCount -eq $PackagesToInstall.Count) {
         'Preparar software de faturação'
     } elseif ($manualCount -gt 0) {
         'Instalar aplicações e preparar software de faturação'
+    } elseif ($portableCount -eq $PackagesToInstall.Count) {
+        'Abrir portáteis temporários'
+    } elseif ($portableCount -gt 0) {
+        'Preparar aplicações e portáteis temporários'
     } else {
         'Instalar aplicações'
     }
@@ -40,7 +45,8 @@
         $packagesZoneSoft = @($PackagesToInstall | Where-Object { $_.custom -eq 'ZoneSoft' })
         $packagesXD = @($PackagesToInstall | Where-Object { $_.custom -eq 'XD' })
         $packagesZSTools = @($PackagesToInstall | Where-Object { $_.custom -eq 'ZSTools' })
-        $totalPackages = @($packagesWinget).Count + @($packagesChoco).Count + @($packagesCustom).Count + $packagesZoneSoft.Count + $packagesXD.Count + $packagesZSTools.Count
+        $packagesPortable = @($PackagesToInstall | Where-Object custom -eq 'Portable')
+        $totalPackages = @($packagesWinget).Count + @($packagesChoco).Count + @($packagesCustom).Count + $packagesZoneSoft.Count + $packagesXD.Count + $packagesZSTools.Count + $packagesPortable.Count
         $completedPackages = 0
         Write-WinUtilLog -Component "Install" -Message "Install package manager split: winget=$(@($packagesWinget).Count), choco=$(@($packagesChoco).Count)"
 
@@ -120,6 +126,15 @@
             }
         }
 
-        Complete-WinUtilPackageRun -Action "Install / Download" -Results $results
+        foreach ($portablePackage in $packagesPortable) {
+            try { $results += Start-WinUtilPortable -Id $portablePackage.portableId }
+            catch {
+                Write-WinUtilLog -Component Portable -Level ERROR -Message $_.Exception.Message
+                $results += [pscustomobject]@{Package=$portablePackage.content;Manager='Portable';Action='Open';ExitCode=1;Outcome='Failed';Detail=$_.Exception.Message}
+            }
+            $completedPackages++
+            Step-WinUtilJob -Status "Portátil processado ($completedPackages/$totalPackages)" -Percent ([int](($completedPackages / $totalPackages) * 100))
+        }
+        Complete-WinUtilPackageRun -Action "Install / Download / Open" -Results $results
     }
 }

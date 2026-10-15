@@ -28,7 +28,7 @@
     }
 
     if ($PARAM_OFFLINE) {
-        foreach ($name in "WPFInstall", "WPFUninstall", "WPFInstallUpgrade", "WPFGetInstalled") {
+        foreach ($name in "WPFInstall", "WPFUninstall", "WPFInstallUpgrade", "WPFGetInstalled", "WPFPortableOpen") {
             if ($sync.$name) { $sync.$name.IsEnabled = $false }
         }
     }

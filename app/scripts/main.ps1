@@ -96,6 +96,7 @@ if ($Preset -or $Config) {
 # thread failed with. Work started from the interface goes to the worker pool through
 # Start-WinUtilJob, so neither the window nor this thread is ever blocked by it.
 
+Clear-WinUtilAbandonedPortables
 $sync.UIRunspace = [runspacefactory]::CreateRunspace($Host, (New-WinUtilSessionState))
 $sync.UIRunspace.ApartmentState = "STA"
 $sync.UIRunspace.ThreadOptions = "ReuseThread"
@@ -134,6 +135,7 @@ foreach ($uiError in $uiShell.Streams.Error) {
 $uiShell.Dispose()
 $sync.UIRunspace.Dispose()
 $sync.Remove("UIRunspace")
+Stop-WinUtilPortableSessions
 
 # The window may have been closed over a job that the user chose to let finish. It is still on
 # the worker pool, so the pool cannot be closed until it is done.

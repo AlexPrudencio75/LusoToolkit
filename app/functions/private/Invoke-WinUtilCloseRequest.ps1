@@ -25,6 +25,9 @@ Pretende fechar a interface e deixar a tarefa terminar na consola?
 
 A aplicação termina automaticamente quando a tarefa acabar. Se escolher Não,
 a tarefa será interrompida e a aplicação fecha. Cancelar mantém a interface aberta.
+
+Os portáteis temporários serão fechados e limpos quando a interface fechar.
+Guarde primeiro o trabalho dessas ferramentas.
 "@
 
     switch ("$answer") {

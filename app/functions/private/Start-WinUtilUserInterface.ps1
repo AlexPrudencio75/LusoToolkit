@@ -170,6 +170,11 @@
             return
         }
 
+        if (-not $sync.ForceClose -and @(Get-WinUtilPortableSessions).Count -gt 0) {
+            $answer = Show-WinUtilMessage -Title 'Fechar portáteis temporários' -Button YesNo -Icon Warning -Message 'As ferramentas portáteis abertas por esta sessão serão fechadas e as cópias temporárias apagadas. Guarde primeiro o seu trabalho. Pretende fechar?'
+            if ("$answer" -ne 'Yes') { $closingArgs.Cancel = $true; return }
+        }
+
         # Work that is meant to outlive the window needs the pool it is running on. main.ps1
         # waits for it and shuts the pool down once it is done.
         if ($sync.FinishInConsole) {
@@ -181,6 +186,7 @@
         # dispatcher callback can deadlock with a worker that is in its UI-thread cleanup block.
         Write-WinUtilLog -Component "UI" -Message "Window closing; the main thread will shut down the worker pool."
     })
+    $sync.Form.Add_Closed({ Stop-WinUtilPortableSessions -NoWait })
 
     # Attach the event handler to the Click event
     $sync.SearchBarClearButton.Add_Click({

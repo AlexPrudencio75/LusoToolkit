@@ -5,6 +5,19 @@ Extraia a pasta completa do ZIP e execute INICIAR.cmd.
 Aceite o pedido de administrador para abrir a aplicação.
 A versão encontra-se no ficheiro VERSION e no menu Sobre.
 
+Portáteis temporários:
+Na secção Portáteis temporários, marque ZoneSoft Converter 2.3.8, Auditor de Rede
+2.1, LigaBD ou Network Scanner 5.1.3 e clique em Abrir portáteis temporários.
+Só são descarregados quando selecionados. Não há instalação nem cache permanente.
+Fechar a ferramenta ou o Windows Utilities fecha a sessão e remove a cópia.
+Se o processo de limpeza também for interrompido, tenta limpar no próximo arranque.
+Guarde os documentos fora da pasta temporária. Os originais fornecidos não são apagados.
+Não é uma sandbox e não se garante zero vestígios; alterações feitas pelas próprias
+ferramentas fora dessa pasta, em redes ou bases de dados, não são revertidas.
+As ferramentas executam com as permissões do Windows Utilities. Os quatro executáveis
+fornecidos não têm assinatura digital; tamanho e SHA-256 são verificados antes de abrir.
+Dependências em falta não são instaladas automaticamente. Consulte ALTERACOES-v0.3.15.txt.
+
 XD:
 No separador Instalar, procure a secção Softwares de faturação.
 Marque o cartão XD e clique em Instalar / transferir seleção.

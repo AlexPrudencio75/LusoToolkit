@@ -6,6 +6,13 @@
         "Order": "1",
         "Description": "Instala ou atualiza as aplicações selecionadas. Para o ZoneSoft, transfere, extrai e abre o Setup como administrador. No ZSTools pode só descarregar ou copiar para a raiz ZSRest e abrir."
     },
+    "WPFPortableOpen": {
+        "Content": "Abrir portáteis temporários",
+        "Category": "____Ações",
+        "Type": "Button",
+        "Order": "1.5",
+        "Description": "Abre apenas os portáteis selecionados, sem instalar. As cópias são removidas ao fechar a ferramenta ou o Windows Utilities. Guarde os seus documentos fora da pasta temporária."
+    },
     "WPFUninstall": {
         "Content": "Desinstalar aplicações",
         "Category": "____Ações",

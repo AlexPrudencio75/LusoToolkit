@@ -229,6 +229,26 @@
         "uninstallSupported": false,
         "foss": false
     },
+    "portable_zonesoft_converter": {
+        "category": "Temporary Portables", "choco": "na", "winget": "na",
+        "content": "ZoneSoft Converter 2.3.8", "custom": "Portable", "portableId": "zonesoft_converter", "uninstallSupported": false, "foss": false,
+        "description": "Abre a versão 2.3.8 fornecida em modo temporário, sem instalar. A cópia é apagada ao fechar a ferramenta ou o Windows Utilities. Sem assinatura digital; integridade verificada por SHA-256. Pode precisar de dependências. Guarde os documentos fora da pasta temporária."
+    },
+    "portable_auditor_rede": {
+        "category": "Temporary Portables", "choco": "na", "winget": "na",
+        "content": "Auditor de Rede 2.1", "custom": "Portable", "portableId": "auditor_rede", "uninstallSupported": false, "foss": false,
+        "description": "Abre a versão 2.1 fornecida em modo temporário, sem instalar. A cópia é apagada ao fechar a ferramenta ou o Windows Utilities. Sem assinatura digital; integridade verificada por SHA-256. Use apenas em redes autorizadas."
+    },
+    "portable_ligabd": {
+        "category": "Temporary Portables", "choco": "na", "winget": "na",
+        "content": "LigaBD", "custom": "Portable", "portableId": "ligabd", "uninstallSupported": false, "foss": false,
+        "description": "Abre o LigaBD fornecido em modo temporário, sem instalar. A cópia é apagada ao fechar a ferramenta ou o Windows Utilities. Sem assinatura digital; integridade verificada por SHA-256. Pode precisar de drivers já instalados. Não introduza credenciais que não esteja autorizado a utilizar."
+    },
+    "portable_netscan": {
+        "category": "Temporary Portables", "choco": "na", "winget": "na",
+        "content": "Network Scanner 5.1.3", "custom": "Portable", "portableId": "netscan", "uninstallSupported": false, "foss": false,
+        "description": "Abre exatamente o netscan.exe 5.1.3 fornecido, sem trocar pela versão atual do fabricante. A cópia é apagada ao fechar a ferramenta ou o Windows Utilities. Sem assinatura digital; SHA-256 verificado. Use apenas em redes autorizadas."
+    },
     "wiztree": {
         "category": "Utilities",
         "choco": "wiztree",

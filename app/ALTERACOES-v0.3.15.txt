@@ -1,0 +1,34 @@
+Windows Utilities PT-PT 0.3.15 - Portáteis temporários
+
+Nova secção com ZoneSoft Converter 2.3.8, Auditor de Rede 2.1, LigaBD e
+Network Scanner 5.1.3, nas versões fornecidas e autorizadas pelo utilizador.
+Selecione os cartões e clique em Abrir portáteis temporários.
+
+Cada executável só é descarregado quando selecionado, para uma pasta de sessão
+própria dentro de TEMP\LusoToolkit-Portables. Não é incluído nem mantido como
+cache no pacote principal. Os originais do Ambiente de Trabalho não são alterados.
+Verificação do tamanho, SHA-256 e estado da assinatura antes da abertura.
+Os quatro ficheiros fornecidos não têm assinatura digital; isto é registado,
+mas o hash não é uma garantia de ausência de malware.
+
+Um anfitrião isolado acompanha cada ferramenta. O processo é criado suspenso,
+associado a um Job Object do Windows e só depois executado. O fecho do utilitário
+ou do respetivo PowerShell termina os processos desse grupo, não outras instâncias
+do mesmo programa. O fecho normal da interface pede confirmação quando há
+portáteis abertos, para permitir guardar o trabalho.
+
+Quando a ferramenta fecha, a cópia temporária e os ficheiros da sua pasta são
+removidos. Se o anfitrião de limpeza também for terminado ou um ficheiro ficar
+bloqueado, o arranque seguinte tenta recolher apenas sessões antigas identificadas,
+sem seguir links/junctions nem apagar pastas gerais. Sessões de outras instâncias
+ainda vivas são preservadas.
+
+TEMP, TMP, APPDATA e LOCALAPPDATA são redirecionados apenas no processo portátil
+para a sua pasta temporária. Isto NÃO é uma sandbox: ferramentas que usam caminhos
+fixos, registo, serviços ou APIs do Windows podem deixar dados fora dela. Não se
+promete zero vestígios, nem se desfazem ações sobre redes ou bases de dados.
+Guarde os seus documentos fora da pasta temporária. Nada é instalado para satisfazer
+dependências em falta. Os portáteis usam as permissões da aplicação principal.
+
+O comando de uma linha do LusoToolkit mantém-se igual e passa a obter a 0.3.15
+quando esta versão estiver publicada no manifesto do repositório.

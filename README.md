@@ -20,10 +20,10 @@ O SHA-256 verifica a integridade do ZIP face ao manifesto no mesmo repositorio; 
 
 ## Transferencia manual
 
-Descarregue [LusoToolkit 0.3.14](packages/LusoToolkit-0.3.14.zip), extraia a pasta completa e execute `INICIAR.cmd`.
+Descarregue [LusoToolkit 0.3.15](packages/LusoToolkit-0.3.15.zip), extraia a pasta completa e execute `INICIAR.cmd`.
 
 ```text
-SHA-256: 38F2181EBA71AFCE09EECE50B926FD840A321000D21A6B68FE1E79E8070A8E12
+SHA-256: 8C4B81645FEE635A7C342067960D14A15C7402B11F779187DDB80A411F15132E
 ```
 
 Nao apague os restantes ficheiros da pasta: a aplicacao necessita dos recursos, configuracoes e fontes para compilar no arranque. Cada execucao do lancador utiliza uma pasta nova; nao substitui nem elimina execucoes anteriores.
@@ -34,6 +34,17 @@ Nao apague os restantes ficheiros da pasta: a aplicacao necessita dos recursos, 
 - XD e ZoneSoft: transferencia a partir das origens oficiais e abertura do assistente para continuar manualmente.
 - ZoneSoft Posto, Sem SQL e Completo: procura a versao numerica mais recente disponivel no catalogo oficial em cada transferencia, extrai e abre `Setup.exe` como administrador.
 - ZSTools: apenas descarregar ou copiar os cinco ficheiros para uma instalacao detetada em `\Zone Soft\ZSRest`, com copia de seguranca antes de substituir, e abrir o ZSTools.
+- Portateis temporarios: ZoneSoft Converter 2.3.8, Auditor de Rede 2.1, LigaBD e Network Scanner 5.1.3, exatamente nas versoes fornecidas pelo mantenedor. Selecione os cartoes e clique em **Abrir portateis temporarios**.
+
+### Portateis: usar sem manter a copia no computador
+
+Os executaveis ficam separados do pacote principal e so sao descarregados quando selecionados, para uma sessao exclusiva em `%TEMP%\LusoToolkit-Portables\<GUID>`. O tamanho e SHA-256 sao verificados antes da abertura. Nao existe instalacao nem cache permanente desses executaveis no LusoToolkit.
+
+Ao fechar a ferramenta, o anfitriao remove a copia e os restantes ficheiros dessa pasta. Ao fechar o Windows Utilities, ou se o respetivo PowerShell terminar, o anfitriao fecha apenas o grupo de processos criado para a ferramenta e limpa a sessao. Nao termina outras instancias do mesmo programa. Fechar a interface com portateis abertos pede confirmacao; guarde primeiro o seu trabalho. Se o anfitriao tambem for terminado, ou a limpeza ficar bloqueada, o arranque seguinte tenta limpar sessoes antigas identificadas, sem tocar em instancias ainda vivas ou seguir junctions.
+
+TEMP/TMP e APPDATA/LOCALAPPDATA sao redirecionados apenas no ambiente dos processos portateis. Isto **nao e uma sandbox e nao garante zero vestigios**: a propria ferramenta ou o Windows pode gravar preferencias, registos, dados ou alteracoes fora dessa pasta. Nao se revertem operacoes sobre redes ou bases de dados. Guarde documentos fora da pasta temporaria. Os originais fornecidos no Ambiente de Trabalho nao sao alterados. Os portateis usam as permissoes da aplicacao principal; so os execute se confiar neles.
+
+Os quatro ficheiros fornecidos nao tem assinatura digital. A verificacao SHA-256 confirma os bytes fornecidos, nao a ausencia de malware. Dependencias em falta nao sao instaladas automaticamente. A gestao de processos e limpeza foi testada com executaveis de teste; estas quatro ferramentas nao foram executadas durante a integracao nem foram realizados acessos a redes ou bases de dados.
 
 Os instaladores XD/ZoneSoft nao estao incluidos neste repositorio. Sao obtidos diretamente dos respetivos fabricantes quando selecionados. A disponibilidade dos portais e as condicoes de utilizacao pertencem aos fabricantes. O ZSTools oficial pode nao ter assinatura digital; a aplicacao informa esse estado no registo. Os instaladores ZoneSoft Setup continuam sujeitos a verificacao estrita da assinatura.
 
@@ -45,4 +56,4 @@ O codigo da aplicacao esta em [`app/`](app/); o ZIP contem a mesma versao comple
 
 Para publicar uma nova versao, teste a aplicacao, adicione um novo `packages/LusoToolkit-<versao>.zip` e atualize `release.json` com a versao, tamanho em bytes e SHA-256 correspondentes, no mesmo commit. O ZIP deve conter a pasta `WindowsUtilities_PTPT_v<versao>/`. Nao substitua pacotes antigos. O comando acima continua igual e usa a versao indicada no manifesto publicado na branch `main`.
 
-Licenca [MIT](LICENSE). Mantidos os creditos e direitos de autor originais de CT Tech Group LLC. Projeto de origem: [ChrisTitusTech/winutil](https://github.com/ChrisTitusTech/winutil).
+Codigo do utilitario sob licenca [MIT](LICENSE). Mantidos os creditos e direitos de autor originais de CT Tech Group LLC. Os executaveis de terceiros em [`portables/`](portables/) mantem as licencas e direitos dos respetivos autores; nao sao relicenciados como MIT. Projeto de origem: [ChrisTitusTech/winutil](https://github.com/ChrisTitusTech/winutil).
