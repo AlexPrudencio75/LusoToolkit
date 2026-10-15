@@ -55,5 +55,3 @@ As ferramentas de sistema podem alterar o Windows. Reveja as opcoes antes de as 
 O codigo da aplicacao esta em [`app/`](app/); o ZIP contem a mesma versao completa, incluindo o script compilado. `Compile.ps1` recompila a aplicacao a partir das fontes. `VERSION` identifica a versao da aplicacao.
 
 Para publicar uma nova versao, teste a aplicacao, adicione um novo `packages/LusoToolkit-<versao>.zip` e atualize `release.json` com a versao, tamanho em bytes e SHA-256 correspondentes, no mesmo commit. O ZIP deve conter a pasta `WindowsUtilities_PTPT_v<versao>/`. Nao substitua pacotes antigos. O comando acima continua igual e usa a versao indicada no manifesto publicado na branch `main`.
-
-Codigo do utilitario sob licenca [MIT](LICENSE). Mantidos os creditos e direitos de autor originais de CT Tech Group LLC. Os executaveis de terceiros em [`portables/`](portables/) mantem as licencas e direitos dos respetivos autores; nao sao relicenciados como MIT. Projeto de origem: [ChrisTitusTech/winutil](https://github.com/ChrisTitusTech/winutil).
