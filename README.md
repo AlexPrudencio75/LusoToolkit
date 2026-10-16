@@ -18,10 +18,10 @@ O SHA-256 verifica a integridade do ZIP face ao manifesto no mesmo repositorio; 
 
 ## Transferencia manual
 
-Descarregue [LusoToolkit 0.3.15](packages/LusoToolkit-0.3.15.zip), extraia a pasta completa e execute `INICIAR.cmd`.
+Descarregue [LusoToolkit 0.3.16](packages/LusoToolkit-0.3.16.zip), extraia a pasta completa e execute `INICIAR.cmd`.
 
 ```text
-SHA-256: 8C4B81645FEE635A7C342067960D14A15C7402B11F779187DDB80A411F15132E
+SHA-256: 6F4D8A396FC1EF9C53F536F97CD0D59A2CBE32E0C59BF5931F38ADDB3829D9D8
 ```
 
 Nao apague os restantes ficheiros da pasta: a aplicacao necessita dos recursos, configuracoes e fontes para compilar no arranque. Cada execucao do lancador utiliza uma pasta nova; nao substitui nem elimina execucoes anteriores.
@@ -32,6 +32,7 @@ Nao apague os restantes ficheiros da pasta: a aplicacao necessita dos recursos, 
 - XD e ZoneSoft: transferencia a partir das origens oficiais e abertura do assistente para continuar manualmente.
 - ZoneSoft Posto, Sem SQL e Completo: procura a versao numerica mais recente disponivel no catalogo oficial em cada transferencia, extrai e abre `Setup.exe` como administrador.
 - ZSTools: apenas descarregar ou copiar os cinco ficheiros para uma instalacao detetada em `\Zone Soft\ZSRest`, com copia de seguranca antes de substituir, e abrir o ZSTools.
+- Acesso remoto: instalador N-able Take Control fornecido pelo mantenedor, alojado publicamente com a sua autorizacao. Marque o cartao na seccao **Acesso remoto** e clique em **Instalar / transferir selecao**. Pede confirmacao, transfere para Downloads, verifica tamanho, SHA-256 e assinatura N-able e abre o assistente como administrador. Conclua a instalacao manualmente, apenas em computadores autorizados. O agente permite acesso remoto pela equipa associada ao instalador e permanece instalado ao fechar a aplicacao; nao e um portatil temporario. Abrir o assistente nao confirma a instalacao. A validade de inscricao/licenca e o funcionamento do servico dependem do fornecedor, nao do alojamento do ficheiro.
 - Portateis temporarios: ZoneSoft Converter 2.3.8, Auditor de Rede 2.1, LigaBD e Network Scanner 5.1.3, exatamente nas versoes fornecidas pelo mantenedor. Selecione os cartoes e clique em **Abrir portateis temporarios**.
 
 ### Portateis: usar sem manter a copia no computador
@@ -53,3 +54,4 @@ As ferramentas de sistema podem alterar o Windows. Reveja as opcoes antes de as 
 O codigo da aplicacao esta em [`app/`](app/); o ZIP contem a mesma versao completa, incluindo o script compilado. `Compile.ps1` recompila a aplicacao a partir das fontes. `VERSION` identifica a versao da aplicacao.
 
 Para publicar uma nova versao, teste a aplicacao, adicione um novo `packages/LusoToolkit-<versao>.zip` e atualize `release.json` com a versao, tamanho em bytes e SHA-256 correspondentes, no mesmo commit. O ZIP deve conter a pasta `WindowsUtilities_PTPT_v<versao>/`. Nao substitua pacotes antigos. O comando acima continua igual e usa a versao indicada no manifesto publicado na branch `main`.
+

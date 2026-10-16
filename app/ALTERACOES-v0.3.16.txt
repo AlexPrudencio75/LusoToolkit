@@ -1,0 +1,8 @@
+Windows Utilities PT-PT v0.3.16 — Acesso remoto
+
+- Novo cartão Acesso remoto, numa secção própria para distinguir a instalação permanente dos portáteis temporários.
+- Selecionar o cartão e clicar em Instalar / transferir seleção pede confirmação, transfere o BAManagement fornecido para Downloads, verifica tamanho, SHA-256 e assinatura N-able, e abre o assistente como administrador.
+- Sem argumentos silenciosos: a instalação é concluída manualmente. Abrir o assistente não confirma que o agente foi instalado.
+- O instalador não entra na gestão de processos nem na limpeza dos portáteis. O agente instalado mantém-se depois de fechar o Windows Utilities.
+- Ficheiro alojado publicamente no GitHub por autorização do mantenedor. A versão fornecida pode estar sujeita às condições/validade de inscrição do fornecedor; alojamento não as altera.
+- Não foi instalado nem executado o agente no computador de desenvolvimento. Testes de abertura/elevação simulados.

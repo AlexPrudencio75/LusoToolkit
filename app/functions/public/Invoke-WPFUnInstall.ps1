@@ -20,6 +20,10 @@
         return
     }
 
+    if (@($PackagesToUninstall | Where-Object custom -eq 'RemoteAgent').Count -gt 0) {
+        Show-WinUtilMessage -Message 'A remoção do agente de acesso remoto não é feita por esta aplicação. Utilize as Definições do Windows ou o procedimento da sua equipa. Desmarque Acesso remoto para desinstalar outras aplicações.' -Title 'Acesso remoto' -Button OK -Icon Information | Out-Null
+        return
+    }
     if (@($PackagesToUninstall | Where-Object { $_.custom -in @('XD','ZoneSoft') -or $_.uninstallSupported -eq $false }).Count -gt 0) {
         Show-WinUtilMessage -Message 'A remoção automática do XD, ZoneSoft e ZSTools não está disponível. Desmarque-os para desinstalar outras aplicações; utilize as Definições do Windows ou as instruções do fabricante para os remover.' -Title 'Softwares de faturação' -Button OK -Icon Information | Out-Null
         return

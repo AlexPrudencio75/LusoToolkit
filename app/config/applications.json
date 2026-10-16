@@ -249,6 +249,11 @@
         "content": "Network Scanner 5.1.3", "custom": "Portable", "portableId": "netscan", "uninstallSupported": false, "foss": false,
         "description": "Abre exatamente o netscan.exe 5.1.3 fornecido, sem trocar pela versão atual do fabricante. A cópia é apagada ao fechar a ferramenta ou o Windows Utilities. Sem assinatura digital; SHA-256 verificado. Use apenas em redes autorizadas."
     },
+    "remote_access": {
+        "category": "Remote Access", "choco": "na", "winget": "na",
+        "content": "Acesso remoto", "custom": "RemoteAgent", "uninstallSupported": false, "foss": false,
+        "description": "INSTALADOR PERMANENTE: transfere o agente N-able Take Control fornecido, verifica SHA-256 e assinatura N-able e, após confirmação, abre o assistente como administrador. Selecione e clique em Instalar / transferir seleção. Não é um portátil: o agente instalado mantém-se ao fechar a aplicação. Instale apenas em computadores autorizados."
+    },
     "wiztree": {
         "category": "Utilities",
         "choco": "wiztree",

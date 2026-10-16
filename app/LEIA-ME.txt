@@ -5,6 +5,17 @@ Extraia a pasta completa do ZIP e execute INICIAR.cmd.
 Aceite o pedido de administrador para abrir a aplicação.
 A versão encontra-se no ficheiro VERSION e no menu Sobre.
 
+Acesso remoto (instalação permanente):
+Na secção Acesso remoto, marque o cartão e clique em Instalar / transferir seleção.
+Confirme apenas em computadores que esteja autorizado a gerir. O BAManagement
+fornecido é transferido para Downloads; tamanho, SHA-256 e assinatura N-able são
+verificados antes de abrir o assistente como administrador. Conclua a instalação
+manualmente. O agente permite acesso remoto pela equipa associada ao instalador.
+Não é um portátil: o instalador e o agente instalado não são apagados ou terminados
+ao fechar o Windows Utilities. Abertura do assistente não confirma a instalação.
+O ficheiro está público por autorização do mantenedor. A validade de inscrição,
+licença e disponibilidade do serviço continuam a depender do fornecedor.
+
 Portáteis temporários:
 Na secção Portáteis temporários, marque ZoneSoft Converter 2.3.8, Auditor de Rede
 2.1, LigaBD ou Network Scanner 5.1.3 e clique em Abrir portáteis temporários.
