@@ -1,0 +1,9 @@
+Windows Utilities PT-PT v0.3.17 — Ícones locais
+
+- Ícones reais incluídos no pacote para todos os 30 cartões de aplicações.
+- Ícones dos portáteis e do acesso remoto obtidos dos executáveis fornecidos, sem os executar.
+- Firefox e PdfCraft passam a usar o ícone da aplicação, não o logótipo genérico do site.
+- Removida a dependência de Google Favicons no arranque: os ícones aparecem imediatamente, inclusive sem Internet.
+- Carregamento local síncrono, em cache de memória e sem bloquear os ficheiros. Se faltar um recurso, mantém-se uma letra visível em vez de um cartão vazio.
+- A janela passa a usar também o logótipo local da aplicação como ícone.
+- Mantidos os mecanismos de seleção, transferências, instalação e limpeza dos portáteis.

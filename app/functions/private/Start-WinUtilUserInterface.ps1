@@ -389,7 +389,9 @@
                 $logoBitmap.CacheOption = [System.Windows.Media.Imaging.BitmapCacheOption]::OnLoad
                 $logoBitmap.UriSource = [System.Uri]::new((Resolve-Path -LiteralPath $logoFile).Path, [System.UriKind]::Absolute)
                 $logoBitmap.EndInit()
+                $logoBitmap.Freeze()
                 $logoControl.Source = $logoBitmap
+                $sync.Form.Icon = $logoBitmap
                 break
             }
         }

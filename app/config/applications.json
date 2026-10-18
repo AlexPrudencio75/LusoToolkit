@@ -1,5 +1,6 @@
 {
     "7zip": {
+        "icon": "assets/app-icons/7zip.png",
         "category": "Utilities",
         "choco": "7zip",
         "content": "7-Zip",
@@ -9,6 +10,7 @@
         "foss": true
     },
     "advancedip": {
+        "icon": "assets/app-icons/advancedip.png",
         "category": "Pro Tools",
         "choco": "advanced-ip-scanner",
         "content": "Advanced IP Scanner",
@@ -18,6 +20,7 @@
         "foss": false
     },
     "anydesk": {
+        "icon": "assets/app-icons/anydesk.png",
         "category": "Utilities",
         "choco": "anydesk",
         "content": "AnyDesk",
@@ -27,6 +30,7 @@
         "foss": false
     },
     "chrome": {
+        "icon": "assets/app-icons/chrome.png",
         "category": "Browsers",
         "choco": "googlechrome",
         "content": "Chrome",
@@ -36,6 +40,7 @@
         "foss": false
     },
     "cpuz": {
+        "icon": "assets/app-icons/cpuz.png",
         "category": "Pro Tools",
         "choco": "cpu-z",
         "content": "CPU-Z",
@@ -45,6 +50,7 @@
         "foss": false
     },
     "crystaldiskinfo": {
+        "icon": "assets/app-icons/crystaldiskinfo.png",
         "category": "Utilities",
         "choco": "crystaldiskinfo",
         "content": "Crystal Disk Info",
@@ -54,6 +60,7 @@
         "foss": true
     },
     "dotnet10": {
+        "icon": "assets/app-icons/dotnet.png",
         "category": "Microsoft Tools",
         "choco": "na",
         "content": ".NET Desktop Runtime 10",
@@ -63,6 +70,7 @@
         "foss": true
     },
     "dotnet31": {
+        "icon": "assets/app-icons/dotnet.png",
         "category": "Microsoft Tools",
         "choco": "na",
         "content": ".NET Desktop Runtime 3.1",
@@ -72,6 +80,7 @@
         "foss": true
     },
     "dotnet5": {
+        "icon": "assets/app-icons/dotnet.png",
         "category": "Microsoft Tools",
         "choco": "na",
         "content": ".NET Desktop Runtime 5",
@@ -81,6 +90,7 @@
         "foss": true
     },
     "dotnet6": {
+        "icon": "assets/app-icons/dotnet.png",
         "category": "Microsoft Tools",
         "choco": "na",
         "content": ".NET Desktop Runtime 6",
@@ -90,6 +100,7 @@
         "foss": true
     },
     "dotnet7": {
+        "icon": "assets/app-icons/dotnet.png",
         "category": "Microsoft Tools",
         "choco": "na",
         "content": ".NET Desktop Runtime 7",
@@ -99,6 +110,7 @@
         "foss": true
     },
     "dotnet8": {
+        "icon": "assets/app-icons/dotnet.png",
         "category": "Microsoft Tools",
         "choco": "na",
         "content": ".NET Desktop Runtime 8",
@@ -108,6 +120,7 @@
         "foss": true
     },
     "dotnet9": {
+        "icon": "assets/app-icons/dotnet.png",
         "category": "Microsoft Tools",
         "choco": "na",
         "content": ".NET Desktop Runtime 9",
@@ -117,6 +130,7 @@
         "foss": true
     },
     "firefox": {
+        "icon": "assets/app-icons/firefox.png",
         "category": "Browsers",
         "choco": "firefox",
         "content": "Firefox",
@@ -126,6 +140,7 @@
         "foss": true
     },
     "pdfcraft": {
+        "icon": "assets/app-icons/pdfcraft.png",
         "category": "Document",
         "choco": "na",
         "content": "PdfCraft (ArtCraft)",
@@ -136,6 +151,7 @@
         "foss": true
     },
     "rufus": {
+        "icon": "assets/app-icons/rufus.png",
         "category": "Utilities",
         "choco": "rufus",
         "content": "Rufus Imager",
@@ -145,6 +161,7 @@
         "foss": true
     },
     "sumatra": {
+        "icon": "assets/app-icons/sumatra.png",
         "category": "Document",
         "choco": "sumatrapdf",
         "content": "Sumatra PDF",
@@ -154,6 +171,7 @@
         "foss": true
     },
     "treesize": {
+        "icon": "assets/app-icons/treesize.png",
         "category": "Utilities",
         "choco": "treesizefree",
         "content": "TreeSize Free",
@@ -163,6 +181,7 @@
         "foss": false
     },
     "winrar": {
+        "icon": "assets/app-icons/winrar.png",
         "category": "Utilities",
         "choco": "winrar",
         "content": "WinRAR",
@@ -172,6 +191,7 @@
         "foss": false
     },
     "xd": {
+        "icon": "assets/app-icons/xd.png",
         "category": "Billing Software",
         "choco": "na",
         "winget": "na",
@@ -183,6 +203,7 @@
         "foss": false
     },
     "zonesoft_posto": {
+        "icon": "assets/app-icons/zonesoft.png",
         "category": "Billing Software",
         "choco": "na",
         "winget": "na",
@@ -195,6 +216,7 @@
         "foss": false
     },
     "zonesoft_semsql": {
+        "icon": "assets/app-icons/zonesoft.png",
         "category": "Billing Software",
         "choco": "na",
         "winget": "na",
@@ -207,6 +229,7 @@
         "foss": false
     },
     "zonesoft_completo": {
+        "icon": "assets/app-icons/zonesoft.png",
         "category": "Billing Software",
         "choco": "na",
         "winget": "na",
@@ -219,6 +242,7 @@
         "foss": false
     },
     "zstools": {
+        "icon": "assets/app-icons/zstools.png",
         "category": "Billing Software",
         "choco": "na",
         "winget": "na",
@@ -230,31 +254,37 @@
         "foss": false
     },
     "portable_zonesoft_converter": {
+        "icon": "assets/app-icons/zonesoft_converter.png",
         "category": "Temporary Portables", "choco": "na", "winget": "na",
         "content": "ZoneSoft Converter 2.3.8", "custom": "Portable", "portableId": "zonesoft_converter", "uninstallSupported": false, "foss": false,
         "description": "Abre a versão 2.3.8 fornecida em modo temporário, sem instalar. A cópia é apagada ao fechar a ferramenta ou o Windows Utilities. Sem assinatura digital; integridade verificada por SHA-256. Pode precisar de dependências. Guarde os documentos fora da pasta temporária."
     },
     "portable_auditor_rede": {
+        "icon": "assets/app-icons/auditor_rede.png",
         "category": "Temporary Portables", "choco": "na", "winget": "na",
         "content": "Auditor de Rede 2.1", "custom": "Portable", "portableId": "auditor_rede", "uninstallSupported": false, "foss": false,
         "description": "Abre a versão 2.1 fornecida em modo temporário, sem instalar. A cópia é apagada ao fechar a ferramenta ou o Windows Utilities. Sem assinatura digital; integridade verificada por SHA-256. Use apenas em redes autorizadas."
     },
     "portable_ligabd": {
+        "icon": "assets/app-icons/ligabd.png",
         "category": "Temporary Portables", "choco": "na", "winget": "na",
         "content": "LigaBD", "custom": "Portable", "portableId": "ligabd", "uninstallSupported": false, "foss": false,
         "description": "Abre o LigaBD fornecido em modo temporário, sem instalar. A cópia é apagada ao fechar a ferramenta ou o Windows Utilities. Sem assinatura digital; integridade verificada por SHA-256. Pode precisar de drivers já instalados. Não introduza credenciais que não esteja autorizado a utilizar."
     },
     "portable_netscan": {
+        "icon": "assets/app-icons/netscan.png",
         "category": "Temporary Portables", "choco": "na", "winget": "na",
         "content": "Network Scanner 5.1.3", "custom": "Portable", "portableId": "netscan", "uninstallSupported": false, "foss": false,
         "description": "Abre exatamente o netscan.exe 5.1.3 fornecido, sem trocar pela versão atual do fabricante. A cópia é apagada ao fechar a ferramenta ou o Windows Utilities. Sem assinatura digital; SHA-256 verificado. Use apenas em redes autorizadas."
     },
     "remote_access": {
+        "icon": "assets/app-icons/remote_access.png",
         "category": "Remote Access", "choco": "na", "winget": "na",
         "content": "Acesso remoto", "custom": "RemoteAgent", "uninstallSupported": false, "foss": false,
         "description": "INSTALADOR PERMANENTE: transfere o agente N-able Take Control fornecido, verifica SHA-256 e assinatura N-able e, após confirmação, abre o assistente como administrador. Selecione e clique em Instalar / transferir seleção. Não é um portátil: o agente instalado mantém-se ao fechar a aplicação. Instale apenas em computadores autorizados."
     },
     "wiztree": {
+        "icon": "assets/app-icons/wiztree.png",
         "category": "Utilities",
         "choco": "wiztree",
         "content": "WizTree",

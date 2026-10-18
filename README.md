@@ -18,16 +18,17 @@ O SHA-256 verifica a integridade do ZIP face ao manifesto no mesmo repositorio; 
 
 ## Transferencia manual
 
-Descarregue [LusoToolkit 0.3.16](packages/LusoToolkit-0.3.16.zip), extraia a pasta completa e execute `INICIAR.cmd`.
+Descarregue [LusoToolkit 0.3.17](packages/LusoToolkit-0.3.17.zip), extraia a pasta completa e execute `INICIAR.cmd`.
 
 ```text
-SHA-256: 6F4D8A396FC1EF9C53F536F97CD0D59A2CBE32E0C59BF5931F38ADDB3829D9D8
+SHA-256: 5A8AF8AF1B2A7C20D6869F55BA3090EAE062E4AD47CE1C53BD9CCE94D346B948
 ```
 
 Nao apague os restantes ficheiros da pasta: a aplicacao necessita dos recursos, configuracoes e fontes para compilar no arranque. Cada execucao do lancador utiliza uma pasta nova; nao substitui nem elimina execucoes anteriores.
 
 ## Funcionalidades
 
+- Icones dos 30 cartoes incluidos no pacote: aparecem imediatamente e sem Internet. A janela tambem usa o logotipo local da aplicacao.
 - Instalacao e atualizacao de aplicacoes, ajustes e ferramentas de manutencao Windows.
 - XD e ZoneSoft: transferencia a partir das origens oficiais e abertura do assistente para continuar manualmente.
 - ZoneSoft Posto, Sem SQL e Completo: procura a versao numerica mais recente disponivel no catalogo oficial em cada transferencia, extrai e abre `Setup.exe` como administrador.

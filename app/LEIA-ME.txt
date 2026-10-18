@@ -5,6 +5,10 @@ Extraia a pasta completa do ZIP e execute INICIAR.cmd.
 Aceite o pedido de administrador para abrir a aplicação.
 A versão encontra-se no ficheiro VERSION e no menu Sobre.
 
+Ícones: as imagens dos 30 cartões estão incluídas em assets\app-icons e não
+precisam de Internet para aparecer. A janela usa o logótipo da aplicação.
+Extraia sempre a pasta completa, incluindo assets. Consulte ALTERACOES-v0.3.17.txt.
+
 Acesso remoto (instalação permanente):
 Na secção Acesso remoto, marque o cartão e clique em Instalar / transferir seleção.
 Confirme apenas em computadores que esteja autorizado a gerir. O BAManagement

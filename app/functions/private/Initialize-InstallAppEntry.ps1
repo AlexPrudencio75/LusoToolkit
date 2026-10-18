@@ -49,11 +49,12 @@
         $fallback.SetResourceReference([Windows.Controls.TextBlock]::FontSizeProperty, "AppEntryFontSize")
         $fallback.SetResourceReference([Windows.Controls.TextBlock]::ForegroundProperty, "ToggleButtonOnColor")
         [void]$icon.Children.Add($fallback)
-        if ($app.link) {
+        $appBitmap = Get-WinUtilAppIcon -AppKey $appKey
+        if ($null -ne $appBitmap) {
             $fallback.Visibility = "Collapsed"
             $logo = New-Object Windows.Controls.Image
             $logo.Stretch = [Windows.Media.Stretch]::Uniform
-            $logo.Source = "https://www.google.com/s2/favicons?sz=64&domain_url=$([uri]::EscapeDataString($app.link))"
+            $logo.Source = $appBitmap
             $logo.Add_ImageFailed($handlers.ImageFailed)
 
             [void]$icon.Children.Add($logo)
