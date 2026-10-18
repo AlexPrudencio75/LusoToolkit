@@ -44,6 +44,8 @@ transferir seleção. Usa a edição Free 8.9.2 oficial, destinada a uso domést
 Uso profissional/assistência a clientes requer uma licença adequada do fabricante.
 Transfere o ZIP, verifica tamanho/SHA-256, extrai os recursos completos e verifica
 a assinatura do executável/API antes de abrir a interface x86/x64 como administrador.
+Abre após a seleção e o botão, sem confirmação adicional da aplicação.
+O Windows pode continuar a pedir autorização de administrador (UAC).
 Não inicia operações automaticamente. ARM64 e Windows Server não disponibilizados.
 Faça cópias de segurança antes de alterar partições.
 EXCEÇÃO DE SEGURANÇA: não é terminado ao fechar a aplicação/PowerShell. A pasta

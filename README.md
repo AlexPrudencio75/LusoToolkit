@@ -18,10 +18,10 @@ O SHA-256 verifica a integridade do ZIP face ao manifesto no mesmo repositorio; 
 
 ## Transferencia manual
 
-Descarregue [LusoToolkit 0.3.19](packages/LusoToolkit-0.3.19.zip), extraia a pasta completa e execute `INICIAR.cmd`.
+Descarregue [LusoToolkit 0.3.20](packages/LusoToolkit-0.3.20.zip), extraia a pasta completa e execute `INICIAR.cmd`.
 
 ```text
-SHA-256: 83BB653ADBC65CEC0E6D6C8437DCDF0DB3D8B4A642CF0049744A7755DBF61669
+SHA-256: E64855C30DC693B9A50768E0BCA394C3902BE7441AEBBEC84DAE263AFBC19BF8
 ```
 
 Nao apague os restantes ficheiros da pasta: a aplicacao necessita dos recursos, configuracoes e fontes para compilar no arranque. Cada execucao do lancador utiliza uma pasta nova; nao substitui nem elimina execucoes anteriores.
@@ -43,7 +43,7 @@ Edicao **Free 8.9.2**, destinada a uso domestico segundo o [fabricante](https://
 
 O ZIP e obtido diretamente de `https://disk-tool.com/download/mde/mde-free-portable.zip`, indicado na [pagina oficial de downloads](https://macrorit.com/download.html). Nenhum executavel Macrorit e redistribuido no GitHub. Verifica tamanho e SHA-256 fixos do ZIP, extrai todos os recursos numa pasta nova e confirma SHA-256 e assinatura digital do executavel/API da arquitetura escolhida. Se o fabricante alterar o ZIP, recusa abrir ate atualizacao revista do LusoToolkit; nao substitui silenciosamente pela versao mais recente.
 
-Depois de uma confirmacao especifica, abre apenas a interface grafica como administrador, sem argumentos de operacoes de disco. **Faca copias de seguranca antes de alterar particoes.** Abrir o programa nao executa alteracoes automaticamente.
+Ao selecionar o cartao e clicar em Abrir portateis ou Instalar / transferir selecao, abre apenas a interface grafica como administrador, sem confirmacao adicional da aplicacao e sem argumentos de operacoes de disco. O pedido de administrador do Windows (UAC) mantem-se quando necessario. **Faca copias de seguranca antes de alterar particoes.** Abrir o programa nao executa alteracoes automaticamente.
 
 **Excecao de seguranca:** nao pertence ao grupo de processos dos portateis temporarios, nao e terminado ao fechar o Windows Utilities/PowerShell e a sua pasta nunca e apagada automaticamente. Fica em `%LOCALAPPDATA%\LusoToolkit\PortableTools\Macrorit-8.9.2-<GUID>`. Remova-a manualmente apenas depois de concluir todas as operacoes e eventuais reinicios. Nao se garante ausencia de registos, preferencias ou outros vestigios criados pelo Windows/fabricante. A integracao foi testada com aberturas simuladas, sem executar Macrorit nem alterar discos/particoes.
 

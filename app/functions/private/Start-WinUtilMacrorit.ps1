@@ -78,10 +78,10 @@ function Start-WinUtilMacrorit {
     # Disk operations must outlive the UI. NEVER register this program in the
     # temporary-portable kill/cleanup system, a job object or an owner watchdog.
     $result=[pscustomobject]@{Package='Macrorit Partition Expert Portable';Manager='SafePortable';Action='Open';ExitCode=0;Outcome='Skipped';Detail='Abertura cancelada.';Path=$null}
-    if (-not (Test-WinUtilUIAlive) -or $sync.PortableStopping) { throw 'É necessária uma interface aberta para confirmar a abertura do Macrorit.' }
+    if (-not (Test-WinUtilUIAlive) -or $sync.PortableStopping) { throw 'É necessária uma interface aberta para abrir o Macrorit.' }
     $architecture=Get-WinUtilMacroritArchitecture
-    $answer=Show-WinUtilMessage -Title 'Macrorit Portable — operações de disco' -Button YesNo -Icon Warning -Message 'Abrir o Macrorit Partition Expert Free Portable? A edição Free destina-se a uso doméstico; para uso profissional/assistência a clientes obtenha uma licença adequada. Faça uma cópia de segurança antes de alterar partições. Não serão iniciadas operações de disco automaticamente. Por segurança, o Macrorit NÃO será terminado nem apagado ao fechar o Windows Utilities/PowerShell. A pasta ficará em LOCALAPPDATA\LusoToolkit\PortableTools; remova-a manualmente só depois de concluir operações e eventuais reinícios. Pretende continuar?'
-    if ("$answer" -ne 'Yes') { return $result }
+    # The selection + Open/Install action is the request to launch. Keep the
+    # licence/safety notes in the card and docs, not an additional modal prompt.
     $package=Get-WinUtilMacroritPackage
     $base=[IO.Path]::GetFullPath((Join-Path $env:LOCALAPPDATA 'LusoToolkit\PortableTools'))
     # Do not write through any redirected application directory.

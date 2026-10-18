@@ -1,0 +1,9 @@
+Windows Utilities PT-PT 0.3.20
+
+- Removida a confirmação adicional "Macrorit Portable — operações de disco".
+- Ao selecionar o Macrorit e clicar em Abrir portáteis ou Instalar / transferir
+  seleção, transfere, verifica e abre diretamente a interface do programa.
+- Mantidas as verificações de integridade e assinatura, as proteções de fecho
+  da interface e o funcionamento independente sem terminar operações de disco.
+- As notas de licença/segurança continuam no cartão e na documentação.
+- Não altera nem desativa o pedido de administrador do Windows (UAC).
