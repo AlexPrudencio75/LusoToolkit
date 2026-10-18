@@ -1,0 +1,10 @@
+Windows Utilities PT-PT 0.3.21
+
+- Corrigido o corte do nome Macrorit Partition Expert Portable e de outros
+  nomes compridos nos cartões da secção Instalar.
+- Os nomes passam para a linha seguinte dentro da largura do cartão,
+  com altura automática, preservando o ícone e o nome completo.
+- Mantidos seleção, pesquisa, ícones, comportamento de abertura e ausência
+  da confirmação adicional do Macrorit.
+- Testes de layout reforçados para verificar também os limites do texto,
+  não apenas os do controlo exterior, em ambos os temas e várias escalas.

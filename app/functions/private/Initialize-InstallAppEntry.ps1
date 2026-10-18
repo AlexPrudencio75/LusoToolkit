@@ -35,8 +35,13 @@
         $checkbox.Add_Checked($handlers.Checked)
         $checkbox.Add_Unchecked($handlers.Unchecked)
 
-        $contentPanel = New-Object Windows.Controls.StackPanel
-        $contentPanel.Orientation = "Horizontal"
+        # Constrain the name to the remaining card width. A horizontal
+        # StackPanel measures text at infinite width and clips long labels.
+        $contentPanel = New-Object Windows.Controls.Grid
+        $iconColumn = New-Object Windows.Controls.ColumnDefinition
+        $iconColumn.Width = [Windows.GridLength]::Auto
+        [void]$contentPanel.ColumnDefinitions.Add($iconColumn)
+        [void]$contentPanel.ColumnDefinitions.Add((New-Object Windows.Controls.ColumnDefinition))
         $contentPanel.VerticalAlignment = [Windows.VerticalAlignment]::Center
 
         $icon = New-Object Windows.Controls.Grid
@@ -65,6 +70,7 @@
         $appName = New-Object Windows.Controls.TextBlock
         $appName.Style = $sync.Form.Resources.AppEntryNameStyle
         $appName.Text = $app.content
+        [Windows.Controls.Grid]::SetColumn($appName, 1)
 
         # Add FOSS label after the name if FOSS
         [void]$contentPanel.Children.Add($appName)

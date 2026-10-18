@@ -18,10 +18,10 @@ O SHA-256 verifica a integridade do ZIP face ao manifesto no mesmo repositorio; 
 
 ## Transferencia manual
 
-Descarregue [LusoToolkit 0.3.20](packages/LusoToolkit-0.3.20.zip), extraia a pasta completa e execute `INICIAR.cmd`.
+Descarregue [LusoToolkit 0.3.21](packages/LusoToolkit-0.3.21.zip), extraia a pasta completa e execute `INICIAR.cmd`.
 
 ```text
-SHA-256: E64855C30DC693B9A50768E0BCA394C3902BE7441AEBBEC84DAE263AFBC19BF8
+SHA-256: 37B9AA21A0FB83DE5C2F719D5D9963250F31E3175010131D56D78F5D4382FEA1
 ```
 
 Nao apague os restantes ficheiros da pasta: a aplicacao necessita dos recursos, configuracoes e fontes para compilar no arranque. Cada execucao do lancador utiliza uma pasta nova; nao substitui nem elimina execucoes anteriores.
@@ -29,6 +29,7 @@ Nao apague os restantes ficheiros da pasta: a aplicacao necessita dos recursos, 
 ## Funcionalidades
 
 - Icones dos 33 cartoes incluidos no pacote: aparecem imediatamente e sem Internet. A janela tambem usa o logotipo local da aplicacao.
+- Cartoes com nomes compridos, incluindo Macrorit, mostram o texto completo em varias linhas, sem corte ou abreviacao, ajustando a altura automaticamente.
 - .NET Framework desde o 3.0: dois cartoes em **Ferramentas Microsoft**, **.NET Framework 3.0/3.5** e **.NET Framework 4.x**. O 3.5 inclui 2.0 e 3.0; usa Windows Update/componentes nas versoes anteriores ao Windows 11 26H1 e o novo instalador autonomo Microsoft no Windows 11 26H1 (build 28000) e posteriores. O cartao 4.x garante 4.8.1 onde compativel ou 4.8 em Windows anteriores compativeis, sem reinstalar/despromover versoes presentes. Instaladores oficiais verificados por tamanho, SHA-256 e assinatura, guardados em Downloads. Usa /quiet /norestart e verifica o resultado; nao reinicia automaticamente. O metodo automatico 4.x requer Windows 10 1607/Server 2016 ou posterior. Tambem disponivel em Configuracao; distinto dos .NET Desktop Runtime. [Regras Microsoft](https://learn.microsoft.com/en-us/dotnet/framework/install/dotnet-35-windows-11), [compatibilidade 4.x](https://learn.microsoft.com/en-us/dotnet/framework/get-started/system-requirements).
 - Instalacao e atualizacao de aplicacoes, ajustes e ferramentas de manutencao Windows.
 - XD e ZoneSoft: transferencia a partir das origens oficiais e abertura do assistente para continuar manualmente.
