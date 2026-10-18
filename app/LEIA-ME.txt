@@ -7,6 +7,8 @@ A versão encontra-se no ficheiro VERSION e no menu Sobre.
 
 Ícones: as imagens dos 33 cartões estão incluídas em assets\app-icons e não
 precisam de Internet para aparecer. A janela usa o logótipo da aplicação.
+Na barra de tarefas, a janela tem uma identidade separada do PowerShell e não
+mostra a antiga sobreposição do WinUtil. Não modifica ícones ou atalhos do Windows.
 Extraia sempre a pasta completa, incluindo assets. Consulte ALTERACOES-v0.3.17.txt.
 
 .NET Framework desde o 3.0:

@@ -1,0 +1,10 @@
+Windows Utilities PT-PT 0.3.22
+
+- A janela usa uma identidade própria na barra de tarefas, separada do grupo
+  genérico do PowerShell, mantendo o logótipo local da aplicação.
+- Removida a sobreposição antiga do WinUtil no arranque e ao ativar a janela.
+- A identificação aplica-se apenas à janela desta aplicação, não ao processo,
+  consola, ícones, atalhos, registo ou configurações do PowerShell/Windows.
+- Os indicadores de progresso, aviso e conclusão das tarefas foram preservados.
+- A propriedade temporária da janela é limpa antes de um fecho não cancelado.
+- O comando curto e a linha original continuam iguais.

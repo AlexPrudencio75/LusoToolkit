@@ -151,6 +151,23 @@
     $sync["Form"].TaskbarItemInfo = New-Object System.Windows.Shell.TaskbarItemInfo
     Set-WinUtilTaskbaritem -state "None"
 
+    # Separate this WPF window from the generic PowerShell taskbar group.
+    # SourceInitialized has a HWND but fires before the first window is shown.
+    $sync.Form.Add_SourceInitialized({
+        try {
+            Set-WinUtilTaskbarIdentity -Window $sync.Form
+            # Registered at source creation, after the application's other
+            # Closing handlers: only clear when close has not been cancelled.
+            $sync.Form.Add_Closing({
+                param($sender,$closing)
+                if (-not $closing.Cancel) {
+                    try { Set-WinUtilTaskbarIdentity -Window $sender -Clear }
+                    catch { Write-WinUtilLog -Component Taskbar -Level WARN -Message ('Limpeza da identidade da janela: ' + $_.Exception.Message) }
+                }
+            })
+        } catch { Write-WinUtilLog -Component Taskbar -Level WARN -Message ('Identidade da barra de tarefas: ' + $_.Exception.Message) }
+    })
+
     # Wired before the window is shown, so work queued during startup already knows to stand
     # aside for anything the user does
     Register-WinUtilInputWatch
@@ -312,7 +329,7 @@
         $sync["Form"].Focus()
         $sync["Form"].Dispatcher.BeginInvoke([System.Windows.Threading.DispatcherPriority]::Background, [action]{ Initialize-WinUtilRunspacePool | Out-Null }) | Out-Null
         $sync["Form"].Dispatcher.BeginInvoke([System.Windows.Threading.DispatcherPriority]::Background, [action]{
-            Set-WinUtilTaskbaritem -overlay "logo"
+            Set-WinUtilTaskbaritem -overlay "None"
         }) | Out-Null
         $sync["Form"].Dispatcher.BeginInvoke([System.Windows.Threading.DispatcherPriority]::Background, [action]{ Start-WinUtilTabWarmup }) | Out-Null
     })
@@ -398,7 +415,7 @@
     }
 
     $sync["Form"].Add_Activated({
-        Set-WinUtilTaskbaritem -overlay "logo"
+        Set-WinUtilTaskbaritem -overlay "None"
     })
 
     $sync["ThemeButton"].Add_Click({
