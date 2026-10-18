@@ -19,7 +19,7 @@
     $packageSummary = Get-WinUtilPackageLogSummary -Packages $PackagesToInstall -Preference $ManagerPreference
     Write-WinUtilLog -Component "Install" -Message "Install selected package(s): $($packageSummary -join '; ')"
 
-    $portableCount = @($PackagesToInstall | Where-Object custom -eq 'Portable').Count
+    $portableCount = @($PackagesToInstall | Where-Object { $_.custom -in @('Portable','SafePortable') }).Count
     $manualCount = @($PackagesToInstall | Where-Object { $_.custom -in @('XD','ZoneSoft','ZSTools') }).Count
     $remoteCount = @($PackagesToInstall | Where-Object custom -eq 'RemoteAgent').Count
     $jobDescription = if ($remoteCount -gt 0) {
@@ -29,9 +29,9 @@
     } elseif ($manualCount -gt 0) {
         'Instalar aplicações e preparar software de faturação'
     } elseif ($portableCount -eq $PackagesToInstall.Count) {
-        'Abrir portáteis temporários'
+        'Abrir portáteis'
     } elseif ($portableCount -gt 0) {
-        'Preparar aplicações e portáteis temporários'
+        'Preparar aplicações e portáteis'
     } else {
         'Instalar aplicações'
     }
@@ -49,9 +49,10 @@
         $packagesXD = @($PackagesToInstall | Where-Object { $_.custom -eq 'XD' })
         $packagesZSTools = @($PackagesToInstall | Where-Object { $_.custom -eq 'ZSTools' })
         $packagesPortable = @($PackagesToInstall | Where-Object custom -eq 'Portable')
+        $packagesSafePortable = @($PackagesToInstall | Where-Object custom -eq 'SafePortable')
         $packagesRemote = @($PackagesToInstall | Where-Object custom -eq 'RemoteAgent')
         $packagesFramework = @($PackagesToInstall | Where-Object custom -eq 'NetFramework')
-        $totalPackages = @($packagesWinget).Count + @($packagesChoco).Count + @($packagesCustom).Count + $packagesZoneSoft.Count + $packagesXD.Count + $packagesZSTools.Count + $packagesPortable.Count + $packagesRemote.Count + $packagesFramework.Count
+        $totalPackages = @($packagesWinget).Count + @($packagesChoco).Count + @($packagesCustom).Count + $packagesZoneSoft.Count + $packagesXD.Count + $packagesZSTools.Count + $packagesPortable.Count + $packagesSafePortable.Count + $packagesRemote.Count + $packagesFramework.Count
         $completedPackages = 0
         Write-WinUtilLog -Component "Install" -Message "Install package manager split: winget=$(@($packagesWinget).Count), choco=$(@($packagesChoco).Count)"
 
@@ -160,6 +161,15 @@
             }
             $completedPackages++
             Step-WinUtilJob -Status "Portátil processado ($completedPackages/$totalPackages)" -Percent ([int](($completedPackages / $totalPackages) * 100))
+        }
+        foreach ($safePortablePackage in $packagesSafePortable) {
+            try { $results += Start-WinUtilMacrorit }
+            catch {
+                Write-WinUtilLog -Component Macrorit -Level ERROR -Message $_.Exception.Message
+                $results += [pscustomobject]@{Package=$safePortablePackage.content;Manager='SafePortable';Action='Open';ExitCode=1;Outcome='Failed';Detail=$_.Exception.Message}
+            }
+            $completedPackages++
+            Step-WinUtilJob -Status "Macrorit processado ($completedPackages/$totalPackages)" -Percent ([int](($completedPackages / $totalPackages) * 100))
         }
         Complete-WinUtilPackageRun -Action "Install / Download / Open" -Results $results
     }

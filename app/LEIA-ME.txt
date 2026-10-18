@@ -5,7 +5,7 @@ Extraia a pasta completa do ZIP e execute INICIAR.cmd.
 Aceite o pedido de administrador para abrir a aplicação.
 A versão encontra-se no ficheiro VERSION e no menu Sobre.
 
-Ícones: as imagens dos 30 cartões estão incluídas em assets\app-icons e não
+Ícones: as imagens dos 33 cartões estão incluídas em assets\app-icons e não
 precisam de Internet para aparecer. A janela usa o logótipo da aplicação.
 Extraia sempre a pasta completa, incluindo assets. Consulte ALTERACOES-v0.3.17.txt.
 
@@ -38,9 +38,23 @@ ao fechar o Windows Utilities. Abertura do assistente não confirma a instalaç�
 O ficheiro está público por autorização do mantenedor. A validade de inscrição,
 licença e disponibilidade do serviço continuam a depender do fornecedor.
 
-Portáteis temporários:
-Na secção Portáteis temporários, marque ZoneSoft Converter 2.3.8, Auditor de Rede
-2.1, LigaBD ou Network Scanner 5.1.3 e clique em Abrir portáteis temporários.
+Macrorit Partition Expert Portable:
+Na secção Portáteis, marque o Macrorit e clique em Abrir portáteis ou Instalar /
+transferir seleção. Usa a edição Free 8.9.2 oficial, destinada a uso doméstico.
+Uso profissional/assistência a clientes requer uma licença adequada do fabricante.
+Transfere o ZIP, verifica tamanho/SHA-256, extrai os recursos completos e verifica
+a assinatura do executável/API antes de abrir a interface x86/x64 como administrador.
+Não inicia operações automaticamente. ARM64 e Windows Server não disponibilizados.
+Faça cópias de segurança antes de alterar partições.
+EXCEÇÃO DE SEGURANÇA: não é terminado ao fechar a aplicação/PowerShell. A pasta
+em %LOCALAPPDATA%\LusoToolkit\PortableTools não é apagada automaticamente.
+Remova-a manualmente apenas depois de concluir operações e eventuais reinícios.
+O URL do fabricante é fixo mas o conteúdo é verificado; se mudar, será necessária
+uma atualização revista do LusoToolkit. Consulte ALTERACOES-v0.3.19.txt.
+
+Quatro portáteis temporários:
+Na secção Portáteis, marque ZoneSoft Converter 2.3.8, Auditor de Rede
+2.1, LigaBD ou Network Scanner 5.1.3 e clique em Abrir portáteis.
 Só são descarregados quando selecionados. Não há instalação nem cache permanente.
 Fechar a ferramenta ou o Windows Utilities fecha a sessão e remove a cópia.
 Se o processo de limpeza também for interrompido, tenta limpar no próximo arranque.

@@ -15,6 +15,10 @@
         return
     }
 
+    if (@($PackagesToUninstall | Where-Object custom -eq 'SafePortable').Count -gt 0) {
+        Show-WinUtilMessage -Message 'O Macrorit portátil não usa instalador. Feche-o e conclua todas as operações e eventuais reinícios antes de remover manualmente a sua pasta em LOCALAPPDATA\LusoToolkit\PortableTools. Desmarque-o para desinstalar outras aplicações.' -Title 'Macrorit Portable' -Button OK -Icon Information | Out-Null
+        return
+    }
     if (@($PackagesToUninstall | Where-Object custom -eq 'Portable').Count -gt 0) {
         Show-WinUtilMessage -Message 'Os portáteis temporários não são instalados. Feche a ferramenta para limpar a cópia; desmarque os portáteis para desinstalar outras aplicações.' -Title 'Portáteis temporários' -Button OK -Icon Information | Out-Null
         return

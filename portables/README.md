@@ -14,3 +14,13 @@ Os direitos e as licencas pertencem aos respetivos autores. A licenca MIT do uti
 Todos os ficheiros fornecidos estao sem assinatura digital. Nem a autorizacao de publicacao nem o hash sao uma certificacao de seguranca. Nao foram executados durante a integracao; use-os apenas se confiar na origem e apenas em sistemas, redes e bases de dados onde esteja autorizado.
 
 O modo temporario remove a copia da sessao, nao garante zero registos/preferencias fora dela e nao desfaz operacoes efetuadas pela ferramenta. Consulte o README principal.
+
+## Macrorit: download direto, sem binario neste repositorio
+
+O cartao Macrorit Partition Expert Portable Free 8.9.2 usa o ZIP do fabricante,
+indicado em https://macrorit.com/download.html. Nao e um quinto executavel alojado
+nesta pasta. A edicao Free destina-se a uso domestico; uso profissional requer
+licenca adequada. Por seguranca, nao e terminado nem apagado ao fechar o PowerShell.
+A pasta em LOCALAPPDATA\LusoToolkit\PortableTools e mantida para remocao manual
+apenas depois de concluir operacoes de disco e eventuais reinicios. Consulte a
+seccao Macrorit do README principal para verificacoes e limites.

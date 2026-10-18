@@ -289,6 +289,13 @@
         "content": "Network Scanner 5.1.3", "custom": "Portable", "portableId": "netscan", "uninstallSupported": false, "foss": false,
         "description": "Abre exatamente o netscan.exe 5.1.3 fornecido, sem trocar pela versão atual do fabricante. A cópia é apagada ao fechar a ferramenta ou o Windows Utilities. Sem assinatura digital; SHA-256 verificado. Use apenas em redes autorizadas."
     },
+    "portable_macrorit": {
+        "icon": "assets/app-icons/macrorit.png",
+        "category": "Temporary Portables", "choco": "na", "winget": "na",
+        "content": "Macrorit Partition Expert Portable", "custom": "SafePortable", "uninstallSupported": false, "foss": false,
+        "link": "https://macrorit.com/partition-magic-manager/free-edition.html",
+        "description": "Edição Free 8.9.2, destinada a uso doméstico. Transfere o ZIP oficial verificado e abre a edição x86/x64 como administrador, sem instalador. Faça uma cópia de segurança antes de alterar partições. EXCEÇÃO DE SEGURANÇA: não é terminado nem apagado ao fechar o PowerShell; a pasta fica em LOCALAPPDATA\\LusoToolkit\\PortableTools. Remova-a manualmente apenas depois de concluir operações e eventuais reinícios. Para uso profissional, obtenha a licença adequada."
+    },
     "remote_access": {
         "icon": "assets/app-icons/remote_access.png",
         "category": "Remote Access", "choco": "na", "winget": "na",

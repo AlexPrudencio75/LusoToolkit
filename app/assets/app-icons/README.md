@@ -23,6 +23,9 @@ Fontes oficiais (imagens normalizadas para PNG, no máximo 128 px; sem executar 
 - XD: https://www.site.xd.pt/templates/jm_consilium/favicon.ico
 - ZoneSoft (três edições): https://zslicweb.zonesoft.org/favicon.ico
 - WizTree: https://wiztreefree.com/apple-touch-icon.png
+- Macrorit Partition Expert: recurso de dm.exe 8.9.2 do ZIP portátil Free oficial,
+  https://disk-tool.com/download/mde/mde-free-portable.zip, indicado por
+  https://macrorit.com/download.html. Extraído apenas por leitura, sem execução.
 
 Os ícones de ZoneSoft Converter 2.3.8, Auditor de Rede 2.1, LigaBD, Network Scanner
 5.1.3 e Acesso remoto foram extraídos, apenas por leitura dos recursos, dos cinco

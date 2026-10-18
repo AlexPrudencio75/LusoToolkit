@@ -1,0 +1,18 @@
+Windows Utilities PT-PT 0.3.19
+
+- Macrorit Partition Expert Portable Free 8.9.2 adicionado à secção Portáteis.
+- Funciona tanto em Abrir portáteis como em Instalar / transferir seleção, em lotes.
+- ZIP obtido diretamente do fabricante, sem alojar executáveis Macrorit no GitHub.
+- Tamanho e SHA-256 do ZIP fixos; extração segura e assinatura do executável/API
+  verificadas antes da abertura. Uma alteração do download é recusada até revisão.
+- Escolha x86/x64 conforme o Windows; ARM64 e Windows Server não disponibilizados.
+- Abre a interface como administrador, sem argumentos de operações de disco.
+- IMPORTANTE: exceção à limpeza dos quatro portáteis temporários. Não é terminado
+  ao fechar a aplicação ou PowerShell e a pasta não é apagada automaticamente.
+  Fica em %LOCALAPPDATA%\LusoToolkit\PortableTools\Macrorit-8.9.2-<GUID>.
+  Remova manualmente só depois de concluir operações e eventuais reinícios.
+- A edição Free destina-se a uso doméstico. Para uso profissional/assistência a
+  clientes é necessária uma licença adequada; não é incluída uma licença comercial.
+- Ícone original extraído por leitura do executável, sem o executar.
+- Os quatro portáteis existentes mantêm o comportamento temporário anterior.
+- Integração testada sem executar o Macrorit ou alterar discos/partições.

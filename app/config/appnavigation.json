@@ -7,11 +7,11 @@
         "Description": "Instala ou atualiza as aplicações selecionadas. Os Frameworks são tratados primeiro, conforme a versão do Windows, sem reinício automático. Para o ZoneSoft, transfere, extrai e abre o Setup como administrador. No ZSTools pode só descarregar ou copiar para a raiz ZSRest e abrir."
     },
     "WPFPortableOpen": {
-        "Content": "Abrir portáteis temporários",
+        "Content": "Abrir portáteis",
         "Category": "____Ações",
         "Type": "Button",
         "Order": "1.5",
-        "Description": "Abre apenas os portáteis selecionados, sem instalar. As cópias são removidas ao fechar a ferramenta ou o Windows Utilities. Guarde os seus documentos fora da pasta temporária."
+        "Description": "Abre apenas os portáteis selecionados, sem instalador. Os quatro portáteis temporários são fechados e limpos ao sair. EXCEÇÃO: o Macrorit continua aberto e a pasta é mantida por segurança; não interrompa operações de disco e remova a pasta manualmente apenas após concluir operações e reinícios."
     },
     "WPFUninstall": {
         "Content": "Desinstalar aplicações",
