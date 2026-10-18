@@ -1,6 +1,12 @@
 ﻿function Invoke-WinUtilFeatureInstall ($CheckBox) {
     Write-WinUtilLog -Component "Feature" -Message "Applying feature action: $CheckBox"
 
+    if ($CheckBox -eq 'WPFFeaturesdotnet') {
+        $results = @(Install-WinUtilNetFramework -Variant Legacy35; Install-WinUtilNetFramework -Variant Latest4)
+        Complete-WinUtilPackageRun -Action 'Install Framework' -Results $results
+        return
+    }
+
     if ($sync.configs.feature.$CheckBox.feature) {
         foreach ($feature in $sync.configs.feature.$CheckBox.feature) {
             Write-Host "Installing $feature"

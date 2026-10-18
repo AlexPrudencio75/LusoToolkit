@@ -168,7 +168,7 @@
     "WPFAppxMicrosoft_ZuneVideo": {"Content":"Filmes e TV","Description":"Permite reproduzir vídeo e aceder a conteúdos multimédia compatíveis."}
   },
   "feature": {
-    "WPFFeaturesdotnet": {"Content": "Ativar .NET Framework 2, 3 e 4", "Description": "Ativa componentes do .NET Framework usados por aplicações Windows antigas. É distinto dos runtimes .NET Desktop do catálogo Instalar."},
+    "WPFFeaturesdotnet": {"Content": "Instalar Framework 3.0/3.5 e 4.x", "Description": "Instala ou ativa o Framework 3.5 (inclui 2.0 e 3.0) e garante 4.8/4.8.1 conforme o Windows. Distingue Windows 11 26H1 dos anteriores. Não reinstala versões presentes nem reinicia automaticamente. Também disponível nos dois cartões Framework do catálogo Instalar; distinto dos .NET Desktop Runtime."},
     "WPFFixesNTPPool": {"Content": "Configurar servidor de hora NTP", "Description": "Configura pool.ntp.org como servidor de sincronização da hora do Windows."},
     "WPFFeatureshyperv": {"Content": "Ativar Hyper-V", "Description": "Ativa os componentes de virtualização Hyper-V. A disponibilidade depende da edição do Windows e do suporte do hardware."},
     "WPFFeatureslegacymedia": {"Content": "Ativar componentes multimédia antigos", "Description": "Ativa componentes antigos, como Windows Media Player e DirectPlay, usados por algumas aplicações."},

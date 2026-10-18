@@ -4,7 +4,7 @@
         "Category": "____Ações",
         "Type": "Button",
         "Order": "1",
-        "Description": "Instala ou atualiza as aplicações selecionadas. Para o ZoneSoft, transfere, extrai e abre o Setup como administrador. No ZSTools pode só descarregar ou copiar para a raiz ZSRest e abrir."
+        "Description": "Instala ou atualiza as aplicações selecionadas. Os Frameworks são tratados primeiro, conforme a versão do Windows, sem reinício automático. Para o ZoneSoft, transfere, extrai e abre o Setup como administrador. No ZSTools pode só descarregar ou copiar para a raiz ZSRest e abrir."
     },
     "WPFPortableOpen": {
         "Content": "Abrir portáteis temporários",

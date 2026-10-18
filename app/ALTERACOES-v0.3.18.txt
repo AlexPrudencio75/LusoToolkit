@@ -1,0 +1,28 @@
+Windows Utilities PT-PT v0.3.18 — .NET Framework desde o 3.0
+
+- Dois cartões no separador Instalar, em Ferramentas Microsoft:
+  .NET Framework 3.0/3.5 e .NET Framework 4.x.
+- O 3.5 inclui os componentes 2.0 e 3.0. Não se usa um instalador antigo 3.0
+  que não seja adequado ao Windows atual.
+- Windows 10 e Windows 11 até 25H2: ativa NetFx3 com origem Windows Update,
+  sem reiniciar. Falhas de origem/rede/política não são escondidas nem contornadas.
+- Windows 11 26H1 (build 28000) e posteriores: instala o novo pacote autónomo
+  3.5 oficial Microsoft, sem chamar o componente NetFx3 que já não existe.
+- Windows Server mantém o método de funcionalidade opcional para 3.5;
+  o instalador exclusivo do Windows 11 não é aplicado a servidores.
+- O cartão 4.x garante 4.8.1 onde suportado e 4.8 em Windows 10 1607 até
+  2004 e Windows Server 2016/2019. O método automático 4.x não se aplica
+  a Windows anteriores a 10 1607/Server 2016. Não força versões incompatíveis.
+- Leitura das vistas 32 e 64 bits do registo; versões 4.x iguais ou superiores
+  ao alvo não são reinstaladas nem despromovidas.
+- Instaladores completos obtidos diretamente da Microsoft, guardados em
+  Downloads sem substituir ficheiros existentes. Tamanho, SHA-256 e assinatura
+  Microsoft verificados antes de executar. Não são incluídos no GitHub/ZIP.
+- Instalação com /quiet /norestart, à espera do código de saída. Sucesso sem
+  reinício exige deteção posterior; reinício pendente é comunicado. A aplicação
+  não envia comandos de reinício nem desinstala Frameworks.
+- O botão da Configuração passa a usar o mesmo adaptador corrigido.
+- Pode selecionar Frameworks e outras aplicações em conjunto; os Frameworks
+  são processados primeiro. Runtimes .NET Desktop continuam separados.
+- Testes de mutação/instalação simulados; instaladores Microsoft apenas
+  descarregados e inspecionados, sem os executar no computador de desenvolvimento.

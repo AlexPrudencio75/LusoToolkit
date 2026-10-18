@@ -50,11 +50,23 @@
         $packagesZSTools = @($PackagesToInstall | Where-Object { $_.custom -eq 'ZSTools' })
         $packagesPortable = @($PackagesToInstall | Where-Object custom -eq 'Portable')
         $packagesRemote = @($PackagesToInstall | Where-Object custom -eq 'RemoteAgent')
-        $totalPackages = @($packagesWinget).Count + @($packagesChoco).Count + @($packagesCustom).Count + $packagesZoneSoft.Count + $packagesXD.Count + $packagesZSTools.Count + $packagesPortable.Count + $packagesRemote.Count
+        $packagesFramework = @($PackagesToInstall | Where-Object custom -eq 'NetFramework')
+        $totalPackages = @($packagesWinget).Count + @($packagesChoco).Count + @($packagesCustom).Count + $packagesZoneSoft.Count + $packagesXD.Count + $packagesZSTools.Count + $packagesPortable.Count + $packagesRemote.Count + $packagesFramework.Count
         $completedPackages = 0
         Write-WinUtilLog -Component "Install" -Message "Install package manager split: winget=$(@($packagesWinget).Count), choco=$(@($packagesChoco).Count)"
 
         $results = @()
+
+        # Framework prerequisites are processed before other selected applications.
+        foreach ($frameworkPackage in $packagesFramework) {
+            try { $results += Install-WinUtilNetFramework -Variant $frameworkPackage.variant }
+            catch {
+                Write-WinUtilLog -Component NetFramework -Level ERROR -Message $_.Exception.Message
+                $results += [pscustomobject]@{Package=$frameworkPackage.content;Manager='NetFramework';Action='Install';ExitCode=1;Outcome='Failed';Detail=$_.Exception.Message}
+            }
+            $completedPackages++
+            Step-WinUtilJob -Status "Framework processado ($completedPackages/$totalPackages)" -Percent ([int](($completedPackages / $totalPackages) * 100))
+        }
 
         if ($packagesWinget.Count -gt 0 -and $packagesWinget -ne "0") {
             Install-WinUtilWinget

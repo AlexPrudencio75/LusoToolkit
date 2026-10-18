@@ -59,6 +59,18 @@
         "winget": "CrystalDewWorld.CrystalDiskInfo",
         "foss": true
     },
+    "netframework35": {
+        "icon": "assets/app-icons/dotnet.png", "category": "Microsoft Tools", "choco": "na", "winget": "na",
+        "content": ".NET Framework 3.0/3.5", "custom": "NetFramework", "variant": "Legacy35", "uninstallSupported": false, "foss": false,
+        "description": "Instala ou ativa o .NET Framework 3.5, que inclui os componentes 2.0 e 3.0. No Windows 10 e Windows 11 até 25H2 usa as funcionalidades do Windows e o Windows Update. No Windows 11 26H1 ou posterior usa o instalador autónomo oficial Microsoft, com SHA-256 e assinatura verificados. Não reinstala se já estiver ativo. Pode exigir reinício manual.",
+        "link": "https://learn.microsoft.com/dotnet/framework/install/dotnet-35-windows-11"
+    },
+    "netframework4": {
+        "icon": "assets/app-icons/dotnet.png", "category": "Microsoft Tools", "choco": "na", "winget": "na",
+        "content": ".NET Framework 4.x", "custom": "NetFramework", "variant": "Latest4", "uninstallSupported": false, "foss": false,
+        "description": "Garante o Framework 4.8.1 em Windows compatíveis ou o 4.8 em Windows 10/Server anteriores compatíveis. Não instala versões 4.x antigas por cima de uma mais recente. Usa o instalador oficial Microsoft se necessário, com SHA-256 e assinatura verificados. Não é o .NET Desktop Runtime. Pode exigir reinício manual.",
+        "link": "https://dotnet.microsoft.com/download/dotnet-framework"
+    },
     "dotnet10": {
         "icon": "assets/app-icons/dotnet.png",
         "category": "Microsoft Tools",

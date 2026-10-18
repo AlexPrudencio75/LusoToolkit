@@ -1,13 +1,10 @@
 ﻿{
   "WPFFeaturesdotnet": {
-    "Content": ".NET Framework (Versions 2, 3, 4) - Enable",
+    "Content": ".NET Framework 3.0/3.5 and 4.x - Install",
     "Description": ".NET and .NET Framework is a developer platform made up of tools, programming languages, and libraries for building many different types of applications.",
     "category": "Features",
     "panel": "1",
-    "feature": [
-      "NetFx4-AdvSrvs",
-      "NetFx3"
-    ],
+    "feature": [],
     "InvokeScript": [],
     "link": "https://winutil.christitus.com/code-reference/features/features/dotnet"
   },

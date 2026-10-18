@@ -9,6 +9,24 @@ A versão encontra-se no ficheiro VERSION e no menu Sobre.
 precisam de Internet para aparecer. A janela usa o logótipo da aplicação.
 Extraia sempre a pasta completa, incluindo assets. Consulte ALTERACOES-v0.3.17.txt.
 
+.NET Framework desde o 3.0:
+No separador Instalar > Ferramentas Microsoft, marque .NET Framework 3.0/3.5
+e/ou .NET Framework 4.x e clique em Instalar / transferir seleção.
+O pacote 3.5 inclui 2.0 e 3.0. O programa distingue os Windows anteriores
+ao Windows 11 26H1, onde ativa a funcionalidade pelo Windows Update, dos
+26H1 e posteriores, onde usa o novo instalador autónomo Microsoft.
+Para 4.x garante 4.8.1 onde compatível ou 4.8 em Windows anteriores compatíveis.
+Não instala cada versão 4.x em separado: são atualizações da mesma família.
+Não reinstala o que já está presente, não remove versões e não reinicia o PC.
+Instaladores em Downloads: integridade e assinatura Microsoft verificadas.
+Pode ser necessário reiniciar manualmente para concluir; respeite o aviso.
+Em Configuração, Instalar Framework 3.0/3.5 e 4.x executa as mesmas duas ações.
+Os cartões .NET Desktop Runtime são produtos diferentes, mantidos separados.
+O método 4.x automático requer Windows 10 1607/Server 2016 ou posterior;
+versões antigas do Windows podem estar fora de suporte. Respeita as políticas
+da organização; não desativa WSUS nem altera políticas para forçar downloads.
+Consulte ALTERACOES-v0.3.18.txt para limites e método de cada Windows.
+
 Acesso remoto (instalação permanente):
 Na secção Acesso remoto, marque o cartão e clique em Instalar / transferir seleção.
 Confirme apenas em computadores que esteja autorizado a gerir. O BAManagement
